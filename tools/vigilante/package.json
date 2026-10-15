@@ -1,0 +1,6 @@
+{
+  "name": "drawingamemaps-vigilante",
+  "private": true,
+  "description": "Prueba semanal de drawingamemaps contra webs de mapas y descubrimiento de juegos nuevos",
+  "dependencies": { "playwright-core": "1.56.1" }
+}

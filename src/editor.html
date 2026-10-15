@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>drawingamemaps</title>
+<link rel="stylesheet" href="editor.css">
+</head>
+<body>
+<div id="top">
+  <button id="bGal" data-i18n-title="tGallery">☰</button>
+  <input id="name" spellcheck="false" data-i18n-placeholder="untitled">
+  <div class="group" id="tools">
+    <button data-tool="pan" data-i18n-title="tPan">✋</button>
+    <button data-tool="pen" data-i18n-title="tPen">✎</button>
+    <button data-tool="line" data-i18n-title="tLine">╱</button>
+    <button data-tool="arrow" data-i18n-title="tArrow">➜</button>
+    <button data-tool="rect" data-i18n-title="tRect">▭</button>
+    <button data-tool="circle" data-i18n-title="tCircle">◯</button>
+    <button data-tool="text" data-i18n-title="tText">T</button>
+    <button data-tool="erase" data-i18n-title="tErase">⌫</button>
+  </div>
+  <div class="group" id="colors"></div>
+  <input type="color" id="color" data-i18n-title="tColor">
+  <input type="range" id="width" min="1" max="30" value="4" data-i18n-title="tWidth">
+  <div class="group">
+    <button id="bUndo" data-i18n-title="tUndo">↶</button>
+    <button id="bRedo" data-i18n-title="tRedo">↷</button>
+    <button id="bFit" data-i18n-title="tFit">⤢</button>
+    <button id="bClear" data-i18n-title="tClear">🗑</button>
+    <button id="bShare" data-i18n-title="tShare">📤</button>
+    <a id="src" target="_blank" data-i18n-title="tSource">↗</a>
+  </div>
+  <span id="zoom"></span>
+</div>
+<div id="shareMenu" hidden>
+  <button data-act="copyView"><span data-i18n="mCopyView"></span> <small>Ctrl+C</small></button>
+  <button data-act="copyFull" data-i18n="mCopyFull"></button>
+  <button data-act="dlView" data-i18n="mDlView"></button>
+  <button data-act="dlFull" data-i18n="mDlFull"></button>
+  <button data-act="share" data-i18n="mShare"></button>
+  <p data-i18n="mHint"></p>
+</div>
+<div id="toast" hidden></div>
+<aside id="gal" hidden>
+  <div id="galList"></div>
+</aside>
+<canvas id="cv"></canvas>
+<input id="textIn" hidden>
+<div id="empty" hidden data-i18n="empty"></div>
+<div id="job" hidden>
+  <h2 id="jobTitle"></h2>
+  <p id="jobMsg"></p>
+  <div id="jobBody"></div>
+  <progress id="jobBar" hidden></progress>
+  <div class="row"><button id="jobGo" hidden data-i18n="download"></button><button id="jobCancel" data-i18n="cancel"></button></div>
+</div>
+<script type="module" src="editor.js"></script>
+</body>
+</html>

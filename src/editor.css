@@ -1,0 +1,50 @@
+:root { --bg: #18181b; --bar: #232328; --btn: #2e2e35; --hi: #0a84ff; --fg: #e8e8ea; --dim: #9a9aa3; }
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; overflow: hidden; background: var(--bg); color: var(--fg); font: 14px system-ui, sans-serif; }
+
+#top { position: fixed; inset: 0 0 auto 0; height: 48px; display: flex; align-items: center; gap: 10px; padding: 0 10px; background: var(--bar); border-bottom: 1px solid #000; z-index: 3; }
+#top button, #top a { width: 34px; height: 34px; border: 0; border-radius: 7px; background: var(--btn); color: var(--fg); font-size: 17px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; text-decoration: none; }
+#top button:hover, #top a:hover { background: #3c3c45; }
+#top button.on { background: var(--hi); }
+.group { display: flex; gap: 4px; }
+#name { width: 220px; min-width: 80px; flex-shrink: 1; background: transparent; border: 1px solid transparent; border-radius: 6px; color: var(--fg); font: inherit; padding: 6px 8px; }
+#name:hover, #name:focus { border-color: #44444d; outline: none; }
+#colors button { width: 24px; height: 24px; border-radius: 50%; border: 2px solid #0006; }
+#colors button.on { outline: 2px solid var(--fg); outline-offset: 1px; background: inherit; }
+#color { width: 28px; height: 28px; border: 0; padding: 0; background: none; cursor: pointer; }
+#width { width: 90px; }
+#zoom { margin-left: auto; color: var(--dim); font-variant-numeric: tabular-nums; }
+
+#cv { position: fixed; top: 48px; left: 0; width: 100%; height: calc(100% - 48px); display: block; touch-action: none; cursor: crosshair; }
+
+#gal { position: fixed; top: 48px; left: 0; bottom: 0; width: 280px; overflow-y: auto; background: var(--bar); border-right: 1px solid #000; z-index: 2; padding: 8px; }
+.item { display: block; position: relative; padding: 6px; border-radius: 8px; cursor: pointer; margin-bottom: 6px; }
+.item:hover { background: var(--btn); }
+.item.cur { background: #0a84ff33; }
+.item img { width: 100%; border-radius: 5px; display: block; }
+.item .n { margin-top: 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.item .d { color: var(--dim); font-size: 12px; }
+.item .x { position: absolute; top: 10px; right: 10px; width: 24px; height: 24px; border: 0; border-radius: 6px; background: #000a; color: #fff; cursor: pointer; display: none; }
+.item:hover .x { display: block; }
+
+#textIn { position: fixed; z-index: 4; background: #000a; border: 1px dashed #fff8; color: #fff; font-weight: 600; font-family: system-ui, sans-serif; padding: 0 4px; outline: none; min-width: 120px; }
+[hidden] { display: none !important; }
+#job { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: min(460px, calc(100% - 32px)); background: var(--bar); border: 1px solid #000; border-radius: 12px; padding: 18px 20px; z-index: 5; box-shadow: 0 10px 40px #000a; }
+#job h2 { margin: 0 0 8px; font-size: 16px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+#job p { margin: 0 0 12px; color: var(--dim); line-height: 1.4; }
+#job progress { width: 100%; margin-bottom: 12px; }
+#job .row { display: flex; gap: 8px; justify-content: flex-end; }
+#job .row button, #jobBody button { border: 0; border-radius: 7px; padding: 8px 14px; background: var(--btn); color: var(--fg); font: inherit; cursor: pointer; }
+#jobGo, #jobBody button.main { background: var(--hi) !important; }
+#jobBody label { display: flex; gap: 8px; align-items: baseline; padding: 6px 8px; border-radius: 7px; cursor: pointer; }
+#jobBody label:hover { background: var(--btn); }
+#jobBody label small { color: var(--dim); margin-left: auto; white-space: nowrap; }
+#jobBody { margin-bottom: 12px; max-height: 50vh; overflow-y: auto; }
+#empty { position: fixed; inset: 48px 0 0 280px; display: flex; align-items: center; justify-content: center; color: var(--dim); font-size: 16px; pointer-events: none; }
+
+#shareMenu { position: fixed; top: 52px; right: 60px; z-index: 6; background: var(--bar); border: 1px solid #000; border-radius: 10px; padding: 6px; box-shadow: 0 8px 30px #000a; width: 290px; }
+#shareMenu button { display: flex; width: 100%; border: 0; background: none; color: var(--fg); font: inherit; text-align: left; padding: 8px 10px; border-radius: 7px; cursor: pointer; }
+#shareMenu button:hover { background: var(--btn); }
+#shareMenu small { margin-left: auto; color: var(--dim); }
+#shareMenu p { margin: 6px 10px 4px; color: var(--dim); font-size: 12px; line-height: 1.4; }
+#toast { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%); z-index: 7; background: #0a84ff; color: #fff; padding: 10px 16px; border-radius: 10px; box-shadow: 0 6px 24px #000a; max-width: calc(100% - 32px); }

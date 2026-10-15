@@ -1,0 +1,346 @@
+{
+ "extDesc": {
+  "message": "Download the whole map from video game map sites and draw on it with zoom and pan."
+ },
+ "cmdDesc": {
+  "message": "Open drawingamemaps"
+ },
+ "menuMyMaps": {
+  "message": "My maps"
+ },
+ "searching": {
+  "message": "Looking for the map…"
+ },
+ "hint": {
+  "message": "Not getting the whole map? Pan or zoom the map and open this again, or press “Reload and analyze”."
+ },
+ "reload": {
+  "message": "Reload and analyze"
+ },
+ "reloadTitle": {
+  "message": "Reloads the page, watching from the start which images it loads"
+ },
+ "noAccess": {
+  "message": "This page can’t be read (browser internal pages, extension store…)."
+ },
+ "optTiles": {
+  "message": "Whole map"
+ },
+ "optTilesSub": {
+  "message": "tiles from $P1$ · $P2$ seen",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "optSvg": {
+  "message": "Vector map (SVG)"
+ },
+ "optSvgSub": {
+  "message": "$P1$ · $P2$ KB · zooms without losing sharpness",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "optImage": {
+  "message": "Full image $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "optCapture": {
+  "message": "Just what’s visible"
+ },
+ "optCaptureSub": {
+  "message": "screenshot of the current view"
+ },
+ "errorX": {
+  "message": "Error: $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "needPerm": {
+  "message": "To download the map, permission to read $P1$ is needed.",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "grant": {
+  "message": "Grant permission"
+ },
+ "permDenied": {
+  "message": "Without that permission the map can’t be downloaded. You can go back and use “Just what’s visible”."
+ },
+ "dlImage": {
+  "message": "Downloading the image…"
+ },
+ "errNoImage": {
+  "message": "The server didn’t return the image."
+ },
+ "preparing": {
+  "message": "Preparing the map: $P1$ / $P2$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "dlSvg": {
+  "message": "Downloading the vector map…"
+ },
+ "errStatus": {
+  "message": "The server responded $P1$.",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "errSvg": {
+  "message": "The file isn’t a valid SVG."
+ },
+ "errSvgSize": {
+  "message": "Can’t tell the size of this SVG."
+ },
+ "svgPick": {
+  "message": "It’s a vector map: you can zoom in as much as you like. Choose the maximum resolution."
+ },
+ "nTiles": {
+  "message": "$P1$ tiles",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "analyzing": {
+  "message": "Analyzing the map…"
+ },
+ "analyzingN": {
+  "message": "Analyzing the map… ($P1$ probes)",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "errNoTiles": {
+  "message": "The server doesn’t return this map’s tiles."
+ },
+ "pickLevel": {
+  "message": "Choose the level of detail. More detail = more zoom without pixelation, but a bigger download."
+ },
+ "noEdges": {
+  "message": "The map doesn’t seem to have edges; the area has been limited."
+ },
+ "level": {
+  "message": "Level $P1$ · $P2$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "levelSub": {
+  "message": "≤$P1$ tiles · $P2$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "dlLevel": {
+  "message": "Downloading level $P1$ of $P2$: $P3$ / $P4$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   },
+   "p3": {
+    "content": "$3"
+   },
+   "p4": {
+    "content": "$4"
+   }
+  }
+ },
+ "errNoLevel": {
+  "message": "Couldn’t download any tile of the chosen level."
+ },
+ "assembling": {
+  "message": "Assembling the map…"
+ },
+ "dlGrid": {
+  "message": "Downloading the tile grid…"
+ },
+ "dlGridN": {
+  "message": "Downloading the tile grid: $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "errTiles": {
+  "message": "Couldn’t make sense of this site’s tiles. Try “Just what’s visible”."
+ },
+ "download": {
+  "message": "Download"
+ },
+ "cancel": {
+  "message": "Cancel"
+ },
+ "close": {
+  "message": "Close"
+ },
+ "confirmClear": {
+  "message": "Delete all strokes on this map?"
+ },
+ "copied": {
+  "message": "Image copied. Paste it into Discord, TeamSpeak, WhatsApp… with Ctrl+V."
+ },
+ "copyFail": {
+  "message": "Couldn’t copy: $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "noShare": {
+  "message": "This browser can’t share files. Use “Copy” and paste with Ctrl+V."
+ },
+ "shareFail": {
+  "message": "Couldn’t share: $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "assemblingFull": {
+  "message": "Assembling the whole map…"
+ },
+ "downloaded": {
+  "message": "Downloaded."
+ },
+ "fullSuffix": {
+  "message": " (whole)"
+ },
+ "deleteMap": {
+  "message": "Delete map"
+ },
+ "confirmDelete": {
+  "message": "Delete “$P1$” and its strokes?",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "noMaps": {
+  "message": "No maps yet."
+ },
+ "untitled": {
+  "message": "Untitled"
+ },
+ "empty": {
+  "message": "Open a map and press Alt+Shift+M (or the extension icon)."
+ },
+ "tGallery": {
+  "message": "My maps (G)"
+ },
+ "tPan": {
+  "message": "Pan (H) · also Space, right button or middle button"
+ },
+ "tPen": {
+  "message": "Pencil (P)"
+ },
+ "tLine": {
+  "message": "Line (L) · Shift snaps the angle"
+ },
+ "tArrow": {
+  "message": "Arrow (A) · Shift snaps the angle"
+ },
+ "tRect": {
+  "message": "Rectangle (R) · Shift = square"
+ },
+ "tCircle": {
+  "message": "Circle (C)"
+ },
+ "tText": {
+  "message": "Text (T)"
+ },
+ "tErase": {
+  "message": "Erase stroke (E)"
+ },
+ "tColor": {
+  "message": "Other color"
+ },
+ "tWidth": {
+  "message": "Thickness"
+ },
+ "tUndo": {
+  "message": "Undo (Ctrl+Z)"
+ },
+ "tRedo": {
+  "message": "Redo (Ctrl+Y)"
+ },
+ "tFit": {
+  "message": "Fit (F)"
+ },
+ "tClear": {
+  "message": "Delete all strokes"
+ },
+ "tShare": {
+  "message": "Copy, download or share (Ctrl+C copies what’s visible)"
+ },
+ "tSource": {
+  "message": "Open the original site"
+ },
+ "mCopyView": {
+  "message": "📋 Copy what’s visible"
+ },
+ "mCopyFull": {
+  "message": "📋 Copy the whole map"
+ },
+ "mDlView": {
+  "message": "⬇ Download what’s visible"
+ },
+ "mDlFull": {
+  "message": "⬇ Download the whole map"
+ },
+ "mShare": {
+  "message": "📤 Share what’s visible…"
+ },
+ "mHint": {
+  "message": "For Discord, TeamSpeak or WhatsApp: copy and paste into the chat with Ctrl+V."
+ }
+}
