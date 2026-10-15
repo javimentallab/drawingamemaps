@@ -1,6 +1,6 @@
 # Store listing — drawingamemaps
 
-Texts to paste into the Chrome Web Store and addons.mozilla.org (AMO) forms.
+Texts for addons.mozilla.org (AMO; submitted with `web-ext sign --amo-metadata store/amo-metadata.json`). The Chrome Web Store is not used for now (it charges a $5 developer fee): Chromium users install from the GitHub release. The Chrome texts are kept here in case that changes.
 
 - **Name:** drawingamemaps
 - **Homepage / support:** https://github.com/javimentallab/drawingamemaps
