@@ -226,6 +226,16 @@ function notify(title, msg) {
   else if (rNew.length) msg += `\nNuevos: ${rNew.map((r) => `${r.ok ? '✅' : '❌'} ${r.name}`).join(', ')}`;
   else msg += '\nSin juegos nuevos en las plataformas.';
   if (popularSinMapa.length) msg += `\nPopulares sin mapa: ${popularSinMapa.slice(0, 6).map((g) => g.name).join(', ')}`;
+  // Estado en addons.mozilla.org (hasta que se publique, la API pública devuelve 401/404).
+  try {
+    const r = await fetch('https://addons.mozilla.org/api/v5/addons/addon/drawingamemaps/', { signal: AbortSignal.timeout(20000) });
+    if (r.ok) {
+      const v = (await r.json()).current_version?.version;
+      if (state.amoPublished !== v) msg += `\n🦊 Firefox: publicada en addons.mozilla.org (v${v})`;
+      state.amoPublished = v;
+      fs.writeFileSync(STATE, JSON.stringify(state, null, 1));
+    } else msg += '\n🦊 Firefox: aún en revisión en addons.mozilla.org';
+  } catch {}
   msg += `\nInforme: ${path.join(DIR, 'ultimo-informe.html')}`;
   log(msg.replace(/\n/g, ' | '));
   notify('drawingamemaps · vigilante', msg);
