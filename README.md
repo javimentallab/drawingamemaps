@@ -31,7 +31,7 @@ Maps that are drawn in the browser from data (Subnautica, Valheim's world genera
 
 ## Install
 
-- **Firefox, Zen, LibreWolf…** — from [addons.mozilla.org](https://addons.mozilla.org/firefox/addon/drawingamemaps/) *(in review)*.
+- **Firefox, Zen, LibreWolf…** — from [addons.mozilla.org](https://addons.mozilla.org/firefox/addon/drawingamemaps/).
 - **Chrome, Brave, Edge, Opera…** — not on the Chrome Web Store. Download `drawingamemaps-chromium-<version>.zip` from the [latest release](https://github.com/javimentallab/drawingamemaps/releases/latest), unzip it, open `chrome://extensions`, turn on **Developer mode** and click **Load unpacked** on the unzipped folder.
 - **From source**: Chromium → *Load unpacked* on `src/`. Firefox → `node tools/build.js`, then `about:debugging#/runtime/this-firefox` → *Load Temporary Add-on* → `dist/firefox/manifest.json`.
 
@@ -66,6 +66,6 @@ Funciona en navegadores Chromium (Chrome, Brave, Edge, Opera…) y en los basado
 
 **Uso:** abre una web de mapa y pulsa **Alt+Shift+M** (o el icono). Elige **Mapa entero** (teselas), **Mapa vectorial (SVG)**, **Imagen completa** o **Solo lo que se ve**; si hace falta, elige el nivel de detalle. Dibuja con lápiz, línea, flecha, rectángulo, círculo, texto y goma. Con el botón 📤 (o **Ctrl+C**) copias lo que se ve y lo pegas en el chat.
 
-**Instalar:** en Firefox/Zen, desde [addons.mozilla.org](https://addons.mozilla.org/firefox/addon/drawingamemaps/) *(en revisión)*. En Chrome/Brave/Edge no está en la Chrome Web Store: descarga `drawingamemaps-chromium-<versión>.zip` de la [última release](https://github.com/javimentallab/drawingamemaps/releases/latest), descomprímelo, abre `chrome://extensions`, activa el **Modo desarrollador** y pulsa **Cargar descomprimida** sobre la carpeta.
+**Instalar:** en Firefox/Zen, desde [addons.mozilla.org](https://addons.mozilla.org/firefox/addon/drawingamemaps/). En Chrome/Brave/Edge no está en la Chrome Web Store: descarga `drawingamemaps-chromium-<versión>.zip` de la [última release](https://github.com/javimentallab/drawingamemaps/releases/latest), descomprímelo, abre `chrome://extensions`, activa el **Modo desarrollador** y pulsa **Cargar descomprimida** sobre la carpeta.
 
 **Privacidad:** no recoge ningún dato; todo se guarda en tu navegador. Ver [PRIVACY.md](PRIVACY.md).
