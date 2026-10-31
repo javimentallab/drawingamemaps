@@ -4,6 +4,12 @@
 
 Download the **whole map** from video game map websites and **draw on it** — with zoom and pan, the strokes stay glued to the terrain. Then copy, download or share the result (paste it straight into Discord, TeamSpeak, WhatsApp…).
 
+<p align="center"><img src="store/screenshot-1-draw.png" width="100%" alt="Drawing on a downloaded DayZ map"></p>
+<p align="center">
+  <img src="store/screenshot-3-detect.png" width="49%" alt="The popup detects the map on the page">
+  <img src="store/screenshot-4-share.png" width="49%" alt="Copy, download or share the drawing">
+</p>
+
 Works in Chromium browsers (Chrome, Brave, Edge, Opera…) and Firefox-based browsers (Firefox, Zen, LibreWolf…). Interface in English, Spanish, Portuguese, French, German, Italian, Dutch, Polish, Russian, Ukrainian, Chinese, Japanese, Korean, Thai and Hindi.
 
 *[Versión en español más abajo](#español).*
