@@ -1,0 +1,346 @@
+{
+ "extDesc": {
+  "message": "Скачивайте карту целиком с сайтов карт видеоигр и рисуйте на ней с масштабированием и прокруткой."
+ },
+ "cmdDesc": {
+  "message": "Открыть drawingamemaps"
+ },
+ "menuMyMaps": {
+  "message": "Мои карты"
+ },
+ "searching": {
+  "message": "Ищу карту…"
+ },
+ "hint": {
+  "message": "Карта выходит не целиком? Сдвиньте или приблизьте карту и откройте это снова либо нажмите «Перезагрузить и проанализировать»."
+ },
+ "reload": {
+  "message": "Перезагрузить и проанализировать"
+ },
+ "reloadTitle": {
+  "message": "Перезагружает страницу и с самого начала следит, какие изображения она загружает"
+ },
+ "noAccess": {
+  "message": "Эту страницу нельзя прочитать (внутренние страницы браузера, магазин расширений…)."
+ },
+ "optTiles": {
+  "message": "Вся карта"
+ },
+ "optTilesSub": {
+  "message": "тайлы с $P1$ · видно: $P2$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "optSvg": {
+  "message": "Векторная карта (SVG)"
+ },
+ "optSvgSub": {
+  "message": "$P1$ · $P2$ КБ · увеличивается без потери чёткости",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "optImage": {
+  "message": "Полное изображение $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "optCapture": {
+  "message": "Только видимое"
+ },
+ "optCaptureSub": {
+  "message": "снимок текущего экрана"
+ },
+ "errorX": {
+  "message": "Ошибка: $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "needPerm": {
+  "message": "Чтобы скачать карту, нужно разрешение на чтение $P1$.",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "grant": {
+  "message": "Дать разрешение"
+ },
+ "permDenied": {
+  "message": "Без этого разрешения карту скачать нельзя. Можно вернуться и выбрать «Только видимое»."
+ },
+ "dlImage": {
+  "message": "Скачиваю изображение…"
+ },
+ "errNoImage": {
+  "message": "Сервер не вернул изображение."
+ },
+ "preparing": {
+  "message": "Готовлю карту: $P1$ / $P2$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "dlSvg": {
+  "message": "Скачиваю векторную карту…"
+ },
+ "errStatus": {
+  "message": "Сервер ответил $P1$.",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "errSvg": {
+  "message": "Файл не является корректным SVG."
+ },
+ "errSvgSize": {
+  "message": "Не удаётся определить размер этого SVG."
+ },
+ "svgPick": {
+  "message": "Это векторная карта: её можно увеличивать сколько угодно. Выберите максимальное разрешение."
+ },
+ "nTiles": {
+  "message": "Тайлов: $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "analyzing": {
+  "message": "Анализирую карту…"
+ },
+ "analyzingN": {
+  "message": "Анализирую карту… (проб: $P1$)",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "errNoTiles": {
+  "message": "Сервер не отдаёт тайлы этой карты."
+ },
+ "pickLevel": {
+  "message": "Выберите уровень детализации. Больше деталей = больше зума без пикселей, но больше загрузка."
+ },
+ "noEdges": {
+  "message": "Похоже, у карты нет краёв; область ограничена."
+ },
+ "level": {
+  "message": "Уровень $P1$ · $P2$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "levelSub": {
+  "message": "≤$P1$ тайлов · $P2$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "dlLevel": {
+  "message": "Скачиваю уровень $P1$ из $P2$: $P3$ / $P4$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   },
+   "p3": {
+    "content": "$3"
+   },
+   "p4": {
+    "content": "$4"
+   }
+  }
+ },
+ "errNoLevel": {
+  "message": "Не удалось скачать ни одного тайла выбранного уровня."
+ },
+ "assembling": {
+  "message": "Собираю карту…"
+ },
+ "dlGrid": {
+  "message": "Скачиваю сетку тайлов…"
+ },
+ "dlGridN": {
+  "message": "Скачиваю сетку тайлов: $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "errTiles": {
+  "message": "Не удалось разобраться в тайлах этого сайта. Попробуйте «Только видимое»."
+ },
+ "download": {
+  "message": "Скачать"
+ },
+ "cancel": {
+  "message": "Отмена"
+ },
+ "close": {
+  "message": "Закрыть"
+ },
+ "confirmClear": {
+  "message": "Удалить все линии на этой карте?"
+ },
+ "copied": {
+  "message": "Изображение скопировано. Вставьте его в Discord, TeamSpeak, WhatsApp… через Ctrl+V."
+ },
+ "copyFail": {
+  "message": "Не удалось скопировать: $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "noShare": {
+  "message": "Этот браузер не умеет делиться файлами. Используйте «Копировать» и вставьте через Ctrl+V."
+ },
+ "shareFail": {
+  "message": "Не удалось поделиться: $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "assemblingFull": {
+  "message": "Собираю всю карту…"
+ },
+ "downloaded": {
+  "message": "Скачано."
+ },
+ "fullSuffix": {
+  "message": " (целиком)"
+ },
+ "deleteMap": {
+  "message": "Удалить карту"
+ },
+ "confirmDelete": {
+  "message": "Удалить «$P1$» вместе с линиями?",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "noMaps": {
+  "message": "Карт пока нет."
+ },
+ "untitled": {
+  "message": "Без названия"
+ },
+ "empty": {
+  "message": "Откройте карту и нажмите Alt+Shift+M (или значок расширения)."
+ },
+ "tGallery": {
+  "message": "Мои карты (G)"
+ },
+ "tPan": {
+  "message": "Сдвиг (H) · также пробел, правая или средняя кнопка мыши"
+ },
+ "tPen": {
+  "message": "Карандаш (P)"
+ },
+ "tLine": {
+  "message": "Линия (L) · Shift фиксирует угол"
+ },
+ "tArrow": {
+  "message": "Стрелка (A) · Shift фиксирует угол"
+ },
+ "tRect": {
+  "message": "Прямоугольник (R) · Shift = квадрат"
+ },
+ "tCircle": {
+  "message": "Круг (C)"
+ },
+ "tText": {
+  "message": "Текст (T)"
+ },
+ "tErase": {
+  "message": "Стереть линию (E)"
+ },
+ "tColor": {
+  "message": "Другой цвет"
+ },
+ "tWidth": {
+  "message": "Толщина"
+ },
+ "tUndo": {
+  "message": "Отменить (Ctrl+Z)"
+ },
+ "tRedo": {
+  "message": "Повторить (Ctrl+Y)"
+ },
+ "tFit": {
+  "message": "Вписать (F)"
+ },
+ "tClear": {
+  "message": "Удалить все линии"
+ },
+ "tShare": {
+  "message": "Копировать, скачать или поделиться (Ctrl+C копирует видимое)"
+ },
+ "tSource": {
+  "message": "Открыть исходный сайт"
+ },
+ "mCopyView": {
+  "message": "📋 Копировать видимое"
+ },
+ "mCopyFull": {
+  "message": "📋 Копировать всю карту"
+ },
+ "mDlView": {
+  "message": "⬇ Скачать видимое"
+ },
+ "mDlFull": {
+  "message": "⬇ Скачать всю карту"
+ },
+ "mShare": {
+  "message": "📤 Поделиться видимым…"
+ },
+ "mHint": {
+  "message": "Для Discord, TeamSpeak или WhatsApp: скопируйте и вставьте в чат через Ctrl+V."
+ }
+}

@@ -1,4 +1,4 @@
-# Genera src/_locales/{en,es}/messages.json desde esta tabla (fuente única de los textos).
+# Genera src/_locales/<idioma>/messages.json desde esta tabla (en, es) y tools/i18n-more.py (el resto).
 # Uso: python tools/i18n-messages.py
 import json, re, os
 
@@ -86,10 +86,28 @@ M = {  # clave: (inglés, español)
 }
 
 root = os.path.join(os.path.dirname(__file__), '..', 'src', '_locales')
-for i, loc in enumerate(['en', 'es']):
+
+# Más idiomas: tools/i18n-more.py, una línea "clave|texto" por mensaje (mismas claves que M).
+here = os.path.dirname(os.path.abspath(__file__))
+more = {}
+exec(open(os.path.join(here, 'i18n-more.py'), encoding='utf-8').read(), more)
+TABLES = {'en': {k: v[0] for k, v in M.items()}, 'es': {k: v[1] for k, v in M.items()}}
+for loc, block in more['LANGS'].items():
+    t = {}
+    for line in block.split('\n'):
+        if line.strip():
+            k, v = line.split('|', 1)  # el texto se guarda tal cual: " (entero)" lleva espacio delante
+            t[k] = v
+    missing, extra = set(M) - set(t), set(t) - set(M)
+    assert not missing and not extra, (loc, sorted(missing), sorted(extra))
+    for k in M:
+        assert set(re.findall(r'\$\d', t[k])) == set(re.findall(r'\$\d', M[k][0])), (loc, k)
+    assert len(t['extDesc']) <= 132, (loc, 'extDesc', len(t['extDesc']))  # tope de Chrome
+    TABLES[loc] = t
+
+for loc, table in TABLES.items():
     out = {}
-    for k, v in M.items():
-        msg = v[i]
+    for k, msg in table.items():
         n = len(set(re.findall(r'\$(\d)', msg)))
         if n:  # Chrome/Firefox: $1 en el texto → placeholder $P1$ con contenido $1
             out[k] = {'message': re.sub(r'\$(\d)', r'$P\1$', msg), 'placeholders': {f'p{j}': {'content': f'${j}'} for j in range(1, n + 1)}}
@@ -98,4 +116,4 @@ for i, loc in enumerate(['en', 'es']):
     os.makedirs(os.path.join(root, loc), exist_ok=True)
     with open(os.path.join(root, loc, 'messages.json'), 'w', encoding='utf-8') as f:
         json.dump(out, f, ensure_ascii=False, indent=1)
-print(len(M), 'textos en', root)
+print(len(M), 'textos ×', len(TABLES), 'idiomas en', root)

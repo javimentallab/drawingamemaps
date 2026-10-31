@@ -1,0 +1,346 @@
+{
+ "extDesc": {
+  "message": "从游戏地图网站下载整张地图，并在上面绘制，支持缩放和平移。"
+ },
+ "cmdDesc": {
+  "message": "打开 drawingamemaps"
+ },
+ "menuMyMaps": {
+  "message": "我的地图"
+ },
+ "searching": {
+  "message": "正在查找地图…"
+ },
+ "hint": {
+  "message": "地图不完整？移动或缩放地图后再打开这里，或点击“重新加载并分析”。"
+ },
+ "reload": {
+  "message": "重新加载并分析"
+ },
+ "reloadTitle": {
+  "message": "重新加载页面，并从头观察它加载了哪些图片"
+ },
+ "noAccess": {
+  "message": "无法读取此页面（浏览器内部页面、扩展商店等）。"
+ },
+ "optTiles": {
+  "message": "整张地图"
+ },
+ "optTilesSub": {
+  "message": "来自 $P1$ 的图块 · 已看到 $P2$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "optSvg": {
+  "message": "矢量地图（SVG）"
+ },
+ "optSvgSub": {
+  "message": "$P1$ · $P2$ KB · 放大不失清晰度",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "optImage": {
+  "message": "完整图片 $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "optCapture": {
+  "message": "只要可见部分"
+ },
+ "optCaptureSub": {
+  "message": "当前画面截图"
+ },
+ "errorX": {
+  "message": "错误：$P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "needPerm": {
+  "message": "下载地图需要读取 $P1$ 的权限。",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "grant": {
+  "message": "授予权限"
+ },
+ "permDenied": {
+  "message": "没有该权限就无法下载地图。你可以返回并使用“只要可见部分”。"
+ },
+ "dlImage": {
+  "message": "正在下载图片…"
+ },
+ "errNoImage": {
+  "message": "服务器没有返回图片。"
+ },
+ "preparing": {
+  "message": "正在准备地图：$P1$ / $P2$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "dlSvg": {
+  "message": "正在下载矢量地图…"
+ },
+ "errStatus": {
+  "message": "服务器返回了 $P1$。",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "errSvg": {
+  "message": "该文件不是有效的 SVG。"
+ },
+ "errSvgSize": {
+  "message": "无法得知此 SVG 的尺寸。"
+ },
+ "svgPick": {
+  "message": "这是矢量地图：可以随意放大。请选择最大分辨率。"
+ },
+ "nTiles": {
+  "message": "$P1$ 个图块",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "analyzing": {
+  "message": "正在分析地图…"
+ },
+ "analyzingN": {
+  "message": "正在分析地图…（$P1$ 次尝试）",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "errNoTiles": {
+  "message": "服务器不提供此地图的图块。"
+ },
+ "pickLevel": {
+  "message": "选择细节级别。细节越多 = 放大越不失真，但下载量越大。"
+ },
+ "noEdges": {
+  "message": "地图似乎没有边界；已限制区域。"
+ },
+ "level": {
+  "message": "级别 $P1$ · $P2$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "levelSub": {
+  "message": "≤$P1$ 个图块 · $P2$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "dlLevel": {
+  "message": "正在下载第 $P1$ 级（共 $P2$ 级）：$P3$ / $P4$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   },
+   "p3": {
+    "content": "$3"
+   },
+   "p4": {
+    "content": "$4"
+   }
+  }
+ },
+ "errNoLevel": {
+  "message": "所选级别的图块一个也下载不了。"
+ },
+ "assembling": {
+  "message": "正在拼合地图…"
+ },
+ "dlGrid": {
+  "message": "正在下载图块网格…"
+ },
+ "dlGridN": {
+  "message": "正在下载图块网格：$P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "errTiles": {
+  "message": "无法解析此网站的图块。试试“只要可见部分”。"
+ },
+ "download": {
+  "message": "下载"
+ },
+ "cancel": {
+  "message": "取消"
+ },
+ "close": {
+  "message": "关闭"
+ },
+ "confirmClear": {
+  "message": "删除此地图上的所有笔画？"
+ },
+ "copied": {
+  "message": "图片已复制。用 Ctrl+V 粘贴到 Discord、TeamSpeak、WhatsApp 等。"
+ },
+ "copyFail": {
+  "message": "无法复制：$P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "noShare": {
+  "message": "此浏览器无法分享文件。请用“复制”，再用 Ctrl+V 粘贴。"
+ },
+ "shareFail": {
+  "message": "无法分享：$P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "assemblingFull": {
+  "message": "正在拼合整张地图…"
+ },
+ "downloaded": {
+  "message": "已下载。"
+ },
+ "fullSuffix": {
+  "message": "（整张）"
+ },
+ "deleteMap": {
+  "message": "删除地图"
+ },
+ "confirmDelete": {
+  "message": "删除“$P1$”及其笔画？",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "noMaps": {
+  "message": "还没有地图。"
+ },
+ "untitled": {
+  "message": "未命名"
+ },
+ "empty": {
+  "message": "打开一张地图，然后按 Alt+Shift+M（或点击扩展图标）。"
+ },
+ "tGallery": {
+  "message": "我的地图 (G)"
+ },
+ "tPan": {
+  "message": "移动 (H) · 也可用空格、右键或中键"
+ },
+ "tPen": {
+  "message": "铅笔 (P)"
+ },
+ "tLine": {
+  "message": "直线 (L) · 按住 Shift 锁定角度"
+ },
+ "tArrow": {
+  "message": "箭头 (A) · 按住 Shift 锁定角度"
+ },
+ "tRect": {
+  "message": "矩形 (R) · Shift = 正方形"
+ },
+ "tCircle": {
+  "message": "圆形 (C)"
+ },
+ "tText": {
+  "message": "文字 (T)"
+ },
+ "tErase": {
+  "message": "擦除笔画 (E)"
+ },
+ "tColor": {
+  "message": "其他颜色"
+ },
+ "tWidth": {
+  "message": "粗细"
+ },
+ "tUndo": {
+  "message": "撤销 (Ctrl+Z)"
+ },
+ "tRedo": {
+  "message": "重做 (Ctrl+Y)"
+ },
+ "tFit": {
+  "message": "适应窗口 (F)"
+ },
+ "tClear": {
+  "message": "删除所有笔画"
+ },
+ "tShare": {
+  "message": "复制、下载或分享（Ctrl+C 复制可见部分）"
+ },
+ "tSource": {
+  "message": "打开原网站"
+ },
+ "mCopyView": {
+  "message": "📋 复制可见部分"
+ },
+ "mCopyFull": {
+  "message": "📋 复制整张地图"
+ },
+ "mDlView": {
+  "message": "⬇ 下载可见部分"
+ },
+ "mDlFull": {
+  "message": "⬇ 下载整张地图"
+ },
+ "mShare": {
+  "message": "📤 分享可见部分…"
+ },
+ "mHint": {
+  "message": "用于 Discord、TeamSpeak 或 WhatsApp：复制后在聊天中按 Ctrl+V 粘贴。"
+ }
+}

@@ -1,0 +1,346 @@
+{
+ "extDesc": {
+  "message": "Scarica la mappa intera dai siti di mappe dei videogiochi e disegnaci sopra con zoom e spostamento."
+ },
+ "cmdDesc": {
+  "message": "Apri drawingamemaps"
+ },
+ "menuMyMaps": {
+  "message": "Le mie mappe"
+ },
+ "searching": {
+  "message": "Cerco la mappa…"
+ },
+ "hint": {
+  "message": "La mappa non esce intera? Sposta o ingrandisci la mappa e riapri questo, oppure premi “Ricarica e analizza”."
+ },
+ "reload": {
+  "message": "Ricarica e analizza"
+ },
+ "reloadTitle": {
+  "message": "Ricarica la pagina osservando dall’inizio quali immagini carica"
+ },
+ "noAccess": {
+  "message": "Questa pagina non si può leggere (pagine interne del browser, negozio di estensioni…)."
+ },
+ "optTiles": {
+  "message": "Mappa intera"
+ },
+ "optTilesSub": {
+  "message": "tessere da $P1$ · $P2$ viste",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "optSvg": {
+  "message": "Mappa vettoriale (SVG)"
+ },
+ "optSvgSub": {
+  "message": "$P1$ · $P2$ KB · si ingrandisce senza perdere nitidezza",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "optImage": {
+  "message": "Immagine completa $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "optCapture": {
+  "message": "Solo ciò che si vede"
+ },
+ "optCaptureSub": {
+  "message": "cattura della schermata attuale"
+ },
+ "errorX": {
+  "message": "Errore: $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "needPerm": {
+  "message": "Per scaricare la mappa serve il permesso di leggere $P1$.",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "grant": {
+  "message": "Concedi permesso"
+ },
+ "permDenied": {
+  "message": "Senza quel permesso la mappa non si può scaricare. Puoi tornare indietro e usare “Solo ciò che si vede”."
+ },
+ "dlImage": {
+  "message": "Scarico l’immagine…"
+ },
+ "errNoImage": {
+  "message": "Il server non ha restituito l’immagine."
+ },
+ "preparing": {
+  "message": "Preparo la mappa: $P1$ / $P2$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "dlSvg": {
+  "message": "Scarico la mappa vettoriale…"
+ },
+ "errStatus": {
+  "message": "Il server ha risposto $P1$.",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "errSvg": {
+  "message": "Il file non è un SVG valido."
+ },
+ "errSvgSize": {
+  "message": "Impossibile sapere le dimensioni di questo SVG."
+ },
+ "svgPick": {
+  "message": "È una mappa vettoriale: puoi ingrandirla quanto vuoi. Scegli la risoluzione massima."
+ },
+ "nTiles": {
+  "message": "$P1$ tessere",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "analyzing": {
+  "message": "Analizzo la mappa…"
+ },
+ "analyzingN": {
+  "message": "Analizzo la mappa… ($P1$ prove)",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "errNoTiles": {
+  "message": "Il server non restituisce le tessere di questa mappa."
+ },
+ "pickLevel": {
+  "message": "Scegli il livello di dettaglio. Più dettaglio = più zoom senza pixel, ma un download più grande."
+ },
+ "noEdges": {
+  "message": "La mappa sembra non avere bordi; l’area è stata limitata."
+ },
+ "level": {
+  "message": "Livello $P1$ · $P2$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "levelSub": {
+  "message": "≤$P1$ tessere · $P2$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "dlLevel": {
+  "message": "Scarico il livello $P1$ di $P2$: $P3$ / $P4$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   },
+   "p3": {
+    "content": "$3"
+   },
+   "p4": {
+    "content": "$4"
+   }
+  }
+ },
+ "errNoLevel": {
+  "message": "Non è stato possibile scaricare nessuna tessera del livello scelto."
+ },
+ "assembling": {
+  "message": "Monto la mappa…"
+ },
+ "dlGrid": {
+  "message": "Scarico la griglia di tessere…"
+ },
+ "dlGridN": {
+  "message": "Scarico la griglia di tessere: $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "errTiles": {
+  "message": "Non sono riuscito a interpretare le tessere di questo sito. Prova “Solo ciò che si vede”."
+ },
+ "download": {
+  "message": "Scarica"
+ },
+ "cancel": {
+  "message": "Annulla"
+ },
+ "close": {
+  "message": "Chiudi"
+ },
+ "confirmClear": {
+  "message": "Cancellare tutti i tratti di questa mappa?"
+ },
+ "copied": {
+  "message": "Immagine copiata. Incollala in Discord, TeamSpeak, WhatsApp… con Ctrl+V."
+ },
+ "copyFail": {
+  "message": "Impossibile copiare: $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "noShare": {
+  "message": "Questo browser non può condividere file. Usa “Copia” e incolla con Ctrl+V."
+ },
+ "shareFail": {
+  "message": "Impossibile condividere: $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "assemblingFull": {
+  "message": "Monto la mappa intera…"
+ },
+ "downloaded": {
+  "message": "Scaricato."
+ },
+ "fullSuffix": {
+  "message": " (intera)"
+ },
+ "deleteMap": {
+  "message": "Elimina mappa"
+ },
+ "confirmDelete": {
+  "message": "Eliminare “$P1$” e i suoi tratti?",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "noMaps": {
+  "message": "Ancora nessuna mappa."
+ },
+ "untitled": {
+  "message": "Senza nome"
+ },
+ "empty": {
+  "message": "Apri una mappa e premi Alt+Shift+M (o l’icona dell’estensione)."
+ },
+ "tGallery": {
+  "message": "Le mie mappe (G)"
+ },
+ "tPan": {
+  "message": "Sposta (H) · anche Spazio, tasto destro o tasto centrale"
+ },
+ "tPen": {
+  "message": "Matita (P)"
+ },
+ "tLine": {
+  "message": "Linea (L) · Shift blocca l’angolo"
+ },
+ "tArrow": {
+  "message": "Freccia (A) · Shift blocca l’angolo"
+ },
+ "tRect": {
+  "message": "Rettangolo (R) · Shift = quadrato"
+ },
+ "tCircle": {
+  "message": "Cerchio (C)"
+ },
+ "tText": {
+  "message": "Testo (T)"
+ },
+ "tErase": {
+  "message": "Cancella tratto (E)"
+ },
+ "tColor": {
+  "message": "Altro colore"
+ },
+ "tWidth": {
+  "message": "Spessore"
+ },
+ "tUndo": {
+  "message": "Annulla (Ctrl+Z)"
+ },
+ "tRedo": {
+  "message": "Ripeti (Ctrl+Y)"
+ },
+ "tFit": {
+  "message": "Adatta (F)"
+ },
+ "tClear": {
+  "message": "Cancella tutti i tratti"
+ },
+ "tShare": {
+  "message": "Copia, scarica o condividi (Ctrl+C copia ciò che si vede)"
+ },
+ "tSource": {
+  "message": "Apri il sito originale"
+ },
+ "mCopyView": {
+  "message": "📋 Copia ciò che si vede"
+ },
+ "mCopyFull": {
+  "message": "📋 Copia la mappa intera"
+ },
+ "mDlView": {
+  "message": "⬇ Scarica ciò che si vede"
+ },
+ "mDlFull": {
+  "message": "⬇ Scarica la mappa intera"
+ },
+ "mShare": {
+  "message": "📤 Condividi ciò che si vede…"
+ },
+ "mHint": {
+  "message": "Per Discord, TeamSpeak o WhatsApp: copia e incolla nella chat con Ctrl+V."
+ }
+}

@@ -1,0 +1,346 @@
+{
+ "extDesc": {
+  "message": "वीडियो गेम के मैप वाली साइटों से पूरा मैप डाउनलोड करें और ज़ूम व खिसकाकर उस पर ड्रॉ करें।"
+ },
+ "cmdDesc": {
+  "message": "drawingamemaps खोलें"
+ },
+ "menuMyMaps": {
+  "message": "मेरे मैप"
+ },
+ "searching": {
+  "message": "मैप ढूँढ रहा है…"
+ },
+ "hint": {
+  "message": "पूरा मैप नहीं आ रहा? मैप को खिसकाएँ या ज़ूम करें और इसे फिर खोलें, या “फिर से लोड करें और जाँचें” दबाएँ।"
+ },
+ "reload": {
+  "message": "फिर से लोड करें और जाँचें"
+ },
+ "reloadTitle": {
+  "message": "पेज फिर से लोड करता है और शुरू से देखता है कि वह कौन-सी तस्वीरें लोड करता है"
+ },
+ "noAccess": {
+  "message": "यह पेज पढ़ा नहीं जा सकता (ब्राउज़र के अंदरूनी पेज, एक्सटेंशन स्टोर…)।"
+ },
+ "optTiles": {
+  "message": "पूरा मैप"
+ },
+ "optTilesSub": {
+  "message": "$P1$ से टाइलें · $P2$ देखी गईं",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "optSvg": {
+  "message": "वेक्टर मैप (SVG)"
+ },
+ "optSvgSub": {
+  "message": "$P1$ · $P2$ KB · बड़ा करने पर भी साफ़",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "optImage": {
+  "message": "पूरी तस्वीर $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "optCapture": {
+  "message": "सिर्फ़ जो दिख रहा है"
+ },
+ "optCaptureSub": {
+  "message": "अभी की स्क्रीन का स्क्रीनशॉट"
+ },
+ "errorX": {
+  "message": "त्रुटि: $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "needPerm": {
+  "message": "मैप डाउनलोड करने के लिए $P1$ पढ़ने की अनुमति चाहिए।",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "grant": {
+  "message": "अनुमति दें"
+ },
+ "permDenied": {
+  "message": "उस अनुमति के बिना मैप डाउनलोड नहीं हो सकता। आप वापस जाकर “सिर्फ़ जो दिख रहा है” चुन सकते हैं।"
+ },
+ "dlImage": {
+  "message": "तस्वीर डाउनलोड हो रही है…"
+ },
+ "errNoImage": {
+  "message": "सर्वर ने तस्वीर नहीं लौटाई।"
+ },
+ "preparing": {
+  "message": "मैप तैयार हो रहा है: $P1$ / $P2$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "dlSvg": {
+  "message": "वेक्टर मैप डाउनलोड हो रहा है…"
+ },
+ "errStatus": {
+  "message": "सर्वर ने $P1$ जवाब दिया।",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "errSvg": {
+  "message": "यह फ़ाइल सही SVG नहीं है।"
+ },
+ "errSvgSize": {
+  "message": "इस SVG का आकार पता नहीं चल पा रहा।"
+ },
+ "svgPick": {
+  "message": "यह वेक्टर मैप है: इसे जितना चाहें बड़ा कर सकते हैं। सबसे ज़्यादा रेज़ोल्यूशन चुनें।"
+ },
+ "nTiles": {
+  "message": "$P1$ टाइलें",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "analyzing": {
+  "message": "मैप की जाँच हो रही है…"
+ },
+ "analyzingN": {
+  "message": "मैप की जाँच हो रही है… ($P1$ प्रयास)",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "errNoTiles": {
+  "message": "सर्वर इस मैप की टाइलें नहीं देता।"
+ },
+ "pickLevel": {
+  "message": "डिटेल का स्तर चुनें। ज़्यादा डिटेल = बिना धुँधलाए ज़्यादा ज़ूम, पर ज़्यादा डाउनलोड।"
+ },
+ "noEdges": {
+  "message": "लगता है मैप के किनारे नहीं हैं; इलाका सीमित कर दिया गया है।"
+ },
+ "level": {
+  "message": "स्तर $P1$ · $P2$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "levelSub": {
+  "message": "≤$P1$ टाइलें · $P2$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "dlLevel": {
+  "message": "स्तर $P1$ / $P2$ डाउनलोड हो रहा है: $P3$ / $P4$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   },
+   "p3": {
+    "content": "$3"
+   },
+   "p4": {
+    "content": "$4"
+   }
+  }
+ },
+ "errNoLevel": {
+  "message": "चुने गए स्तर की एक भी टाइल डाउनलोड नहीं हो सकी।"
+ },
+ "assembling": {
+  "message": "मैप जोड़ा जा रहा है…"
+ },
+ "dlGrid": {
+  "message": "टाइलों का ग्रिड डाउनलोड हो रहा है…"
+ },
+ "dlGridN": {
+  "message": "टाइलों का ग्रिड डाउनलोड हो रहा है: $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "errTiles": {
+  "message": "इस साइट की टाइलें समझ नहीं आईं। “सिर्फ़ जो दिख रहा है” आज़माएँ।"
+ },
+ "download": {
+  "message": "डाउनलोड करें"
+ },
+ "cancel": {
+  "message": "रद्द करें"
+ },
+ "close": {
+  "message": "बंद करें"
+ },
+ "confirmClear": {
+  "message": "इस मैप की सारी लकीरें मिटाएँ?"
+ },
+ "copied": {
+  "message": "तस्वीर कॉपी हो गई। उसे Discord, TeamSpeak, WhatsApp… में Ctrl+V से चिपकाएँ।"
+ },
+ "copyFail": {
+  "message": "कॉपी नहीं हो सका: $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "noShare": {
+  "message": "यह ब्राउज़र फ़ाइलें शेयर नहीं कर सकता। “कॉपी” इस्तेमाल करें और Ctrl+V से चिपकाएँ।"
+ },
+ "shareFail": {
+  "message": "शेयर नहीं हो सका: $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "assemblingFull": {
+  "message": "पूरा मैप जोड़ा जा रहा है…"
+ },
+ "downloaded": {
+  "message": "डाउनलोड हो गया।"
+ },
+ "fullSuffix": {
+  "message": " (पूरा)"
+ },
+ "deleteMap": {
+  "message": "मैप मिटाएँ"
+ },
+ "confirmDelete": {
+  "message": "“$P1$” और उसकी लकीरें मिटाएँ?",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "noMaps": {
+  "message": "अभी कोई मैप नहीं।"
+ },
+ "untitled": {
+  "message": "बिना नाम"
+ },
+ "empty": {
+  "message": "कोई मैप खोलें और Alt+Shift+M (या एक्सटेंशन का आइकन) दबाएँ।"
+ },
+ "tGallery": {
+  "message": "मेरे मैप (G)"
+ },
+ "tPan": {
+  "message": "खिसकाएँ (H) · स्पेस, दायाँ या बीच का बटन भी"
+ },
+ "tPen": {
+  "message": "पेंसिल (P)"
+ },
+ "tLine": {
+  "message": "रेखा (L) · Shift से कोण तय"
+ },
+ "tArrow": {
+  "message": "तीर (A) · Shift से कोण तय"
+ },
+ "tRect": {
+  "message": "आयत (R) · Shift = वर्ग"
+ },
+ "tCircle": {
+  "message": "वृत्त (C)"
+ },
+ "tText": {
+  "message": "टेक्स्ट (T)"
+ },
+ "tErase": {
+  "message": "लकीर मिटाएँ (E)"
+ },
+ "tColor": {
+  "message": "दूसरा रंग"
+ },
+ "tWidth": {
+  "message": "मोटाई"
+ },
+ "tUndo": {
+  "message": "पूर्ववत करें (Ctrl+Z)"
+ },
+ "tRedo": {
+  "message": "फिर से करें (Ctrl+Y)"
+ },
+ "tFit": {
+  "message": "फ़िट करें (F)"
+ },
+ "tClear": {
+  "message": "सारी लकीरें मिटाएँ"
+ },
+ "tShare": {
+  "message": "कॉपी, डाउनलोड या शेयर करें (Ctrl+C दिख रहा हिस्सा कॉपी करता है)"
+ },
+ "tSource": {
+  "message": "मूल साइट खोलें"
+ },
+ "mCopyView": {
+  "message": "📋 दिख रहा हिस्सा कॉपी करें"
+ },
+ "mCopyFull": {
+  "message": "📋 पूरा मैप कॉपी करें"
+ },
+ "mDlView": {
+  "message": "⬇ दिख रहा हिस्सा डाउनलोड करें"
+ },
+ "mDlFull": {
+  "message": "⬇ पूरा मैप डाउनलोड करें"
+ },
+ "mShare": {
+  "message": "📤 दिख रहा हिस्सा शेयर करें…"
+ },
+ "mHint": {
+  "message": "Discord, TeamSpeak या WhatsApp के लिए: कॉपी करें और चैट में Ctrl+V से चिपकाएँ।"
+ }
+}

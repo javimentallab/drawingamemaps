@@ -1,0 +1,346 @@
+{
+ "extDesc": {
+  "message": "ゲームのマップサイトからマップ全体をダウンロードし、ズームやスクロールしながら上に描けます。"
+ },
+ "cmdDesc": {
+  "message": "drawingamemaps を開く"
+ },
+ "menuMyMaps": {
+  "message": "マイマップ"
+ },
+ "searching": {
+  "message": "マップを探しています…"
+ },
+ "hint": {
+  "message": "マップ全体が出ない？マップを動かすかズームしてからもう一度開くか、「再読み込みして解析」を押してください。"
+ },
+ "reload": {
+  "message": "再読み込みして解析"
+ },
+ "reloadTitle": {
+  "message": "ページを再読み込みし、最初から読み込まれる画像を監視します"
+ },
+ "noAccess": {
+  "message": "このページは読み取れません（ブラウザーの内部ページ、拡張機能ストアなど）。"
+ },
+ "optTiles": {
+  "message": "マップ全体"
+ },
+ "optTilesSub": {
+  "message": "$P1$ のタイル · 表示済み $P2$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "optSvg": {
+  "message": "ベクターマップ（SVG）"
+ },
+ "optSvgSub": {
+  "message": "$P1$ · $P2$ KB · 拡大してもぼやけません",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "optImage": {
+  "message": "画像全体 $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "optCapture": {
+  "message": "見えている部分だけ"
+ },
+ "optCaptureSub": {
+  "message": "現在の画面のキャプチャ"
+ },
+ "errorX": {
+  "message": "エラー：$P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "needPerm": {
+  "message": "マップをダウンロードするには $P1$ を読み取る権限が必要です。",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "grant": {
+  "message": "権限を許可"
+ },
+ "permDenied": {
+  "message": "その権限がないとマップをダウンロードできません。戻って「見えている部分だけ」を使えます。"
+ },
+ "dlImage": {
+  "message": "画像をダウンロード中…"
+ },
+ "errNoImage": {
+  "message": "サーバーが画像を返しませんでした。"
+ },
+ "preparing": {
+  "message": "マップを準備中：$P1$ / $P2$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "dlSvg": {
+  "message": "ベクターマップをダウンロード中…"
+ },
+ "errStatus": {
+  "message": "サーバーの応答は $P1$ でした。",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "errSvg": {
+  "message": "このファイルは有効な SVG ではありません。"
+ },
+ "errSvgSize": {
+  "message": "この SVG のサイズがわかりません。"
+ },
+ "svgPick": {
+  "message": "ベクターマップなので、いくらでも拡大できます。最大解像度を選んでください。"
+ },
+ "nTiles": {
+  "message": "$P1$ タイル",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "analyzing": {
+  "message": "マップを解析中…"
+ },
+ "analyzingN": {
+  "message": "マップを解析中…（試行 $P1$ 回）",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "errNoTiles": {
+  "message": "サーバーがこのマップのタイルを返しません。"
+ },
+ "pickLevel": {
+  "message": "詳細度を選んでください。詳細が多いほど粗くならずに拡大できますが、ダウンロードは大きくなります。"
+ },
+ "noEdges": {
+  "message": "マップに端がないようです。範囲を制限しました。"
+ },
+ "level": {
+  "message": "レベル $P1$ · $P2$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "levelSub": {
+  "message": "≤$P1$ タイル · $P2$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "dlLevel": {
+  "message": "レベル $P1$ / $P2$ をダウンロード中：$P3$ / $P4$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   },
+   "p3": {
+    "content": "$3"
+   },
+   "p4": {
+    "content": "$4"
+   }
+  }
+ },
+ "errNoLevel": {
+  "message": "選んだレベルのタイルを 1 枚もダウンロードできませんでした。"
+ },
+ "assembling": {
+  "message": "マップを組み立て中…"
+ },
+ "dlGrid": {
+  "message": "タイルのグリッドをダウンロード中…"
+ },
+ "dlGridN": {
+  "message": "タイルのグリッドをダウンロード中：$P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "errTiles": {
+  "message": "このサイトのタイルを解釈できませんでした。「見えている部分だけ」を試してください。"
+ },
+ "download": {
+  "message": "ダウンロード"
+ },
+ "cancel": {
+  "message": "キャンセル"
+ },
+ "close": {
+  "message": "閉じる"
+ },
+ "confirmClear": {
+  "message": "このマップの線をすべて削除しますか？"
+ },
+ "copied": {
+  "message": "画像をコピーしました。Discord、TeamSpeak、WhatsApp などに Ctrl+V で貼り付けてください。"
+ },
+ "copyFail": {
+  "message": "コピーできませんでした：$P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "noShare": {
+  "message": "このブラウザーはファイルを共有できません。「コピー」を使い、Ctrl+V で貼り付けてください。"
+ },
+ "shareFail": {
+  "message": "共有できませんでした：$P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "assemblingFull": {
+  "message": "マップ全体を組み立て中…"
+ },
+ "downloaded": {
+  "message": "ダウンロードしました。"
+ },
+ "fullSuffix": {
+  "message": "（全体）"
+ },
+ "deleteMap": {
+  "message": "マップを削除"
+ },
+ "confirmDelete": {
+  "message": "「$P1$」とその線を削除しますか？",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "noMaps": {
+  "message": "まだマップがありません。"
+ },
+ "untitled": {
+  "message": "無題"
+ },
+ "empty": {
+  "message": "マップを開いて Alt+Shift+M（または拡張機能のアイコン）を押してください。"
+ },
+ "tGallery": {
+  "message": "マイマップ (G)"
+ },
+ "tPan": {
+  "message": "移動 (H) · スペース、右ボタン、中ボタンでも可"
+ },
+ "tPen": {
+  "message": "鉛筆 (P)"
+ },
+ "tLine": {
+  "message": "直線 (L) · Shift で角度を固定"
+ },
+ "tArrow": {
+  "message": "矢印 (A) · Shift で角度を固定"
+ },
+ "tRect": {
+  "message": "四角形 (R) · Shift = 正方形"
+ },
+ "tCircle": {
+  "message": "円 (C)"
+ },
+ "tText": {
+  "message": "テキスト (T)"
+ },
+ "tErase": {
+  "message": "線を消す (E)"
+ },
+ "tColor": {
+  "message": "別の色"
+ },
+ "tWidth": {
+  "message": "太さ"
+ },
+ "tUndo": {
+  "message": "元に戻す (Ctrl+Z)"
+ },
+ "tRedo": {
+  "message": "やり直す (Ctrl+Y)"
+ },
+ "tFit": {
+  "message": "全体を表示 (F)"
+ },
+ "tClear": {
+  "message": "線をすべて削除"
+ },
+ "tShare": {
+  "message": "コピー、ダウンロード、共有（Ctrl+C で見えている部分をコピー）"
+ },
+ "tSource": {
+  "message": "元のサイトを開く"
+ },
+ "mCopyView": {
+  "message": "📋 見えている部分をコピー"
+ },
+ "mCopyFull": {
+  "message": "📋 マップ全体をコピー"
+ },
+ "mDlView": {
+  "message": "⬇ 見えている部分をダウンロード"
+ },
+ "mDlFull": {
+  "message": "⬇ マップ全体をダウンロード"
+ },
+ "mShare": {
+  "message": "📤 見えている部分を共有…"
+ },
+ "mHint": {
+  "message": "Discord、TeamSpeak、WhatsApp なら：コピーしてチャットに Ctrl+V で貼り付け。"
+ }
+}

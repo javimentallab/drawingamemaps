@@ -4,7 +4,7 @@
 
 Download the **whole map** from video game map websites and **draw on it** — with zoom and pan, the strokes stay glued to the terrain. Then copy, download or share the result (paste it straight into Discord, TeamSpeak, WhatsApp…).
 
-Works in Chromium browsers (Chrome, Brave, Edge, Opera…) and Firefox-based browsers (Firefox, Zen, LibreWolf…). Interface in English and Spanish.
+Works in Chromium browsers (Chrome, Brave, Edge, Opera…) and Firefox-based browsers (Firefox, Zen, LibreWolf…). Interface in English, Spanish, Portuguese, French, German, Italian, Dutch, Polish, Russian, Ukrainian, Chinese, Japanese, Korean, Thai and Hindi.
 
 *[Versión en español más abajo](#español).*
 
@@ -40,7 +40,7 @@ Maps that are drawn in the browser from data (Subnautica, Valheim's world genera
 ```
 src/                 the extension (Manifest V3, Chromium flavour, no build step, no dependencies)
 tools/build.js       builds dist/chromium + dist/firefox and their .zip packages for the stores
-tools/i18n-messages.py   single source for the English/Spanish texts → src/_locales
+tools/i18n-messages.py   English/Spanish texts (+ tools/i18n-more.py, the other 13 languages) → src/_locales
 tools/make-icons.py  draws the icon
 tools/vigilante/     weekly test robot: runs the extension in a headless browser against many map
                      sites, discovers new games on Map Genie / th.gl / Shackmaps and reports

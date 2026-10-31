@@ -43,9 +43,12 @@ fx.background = { scripts: ['browser-shim.js', 'background.js'] };
 fx.browser_specific_settings = {
   gecko: {
     id: GECKO_ID,
-    strict_min_version: '128.0', // scripting con world MAIN y declarativeNetRequest completos
+    // 140: la primera que entiende data_collection_permissions (AMO lo exige); de paso
+    // trae scripting con world MAIN y declarativeNetRequest completos.
+    strict_min_version: '140.0',
     data_collection_permissions: { required: ['none'] },
   },
+  gecko_android: { strict_min_version: '142.0' }, // ídem en Android
 };
 fs.writeFileSync(path.join(firefox, 'manifest.json'), JSON.stringify(fx, null, 2) + '\n');
 fs.writeFileSync(path.join(firefox, 'browser-shim.js'),

@@ -1,0 +1,346 @@
+{
+ "extDesc": {
+  "message": "Завантажуйте мапу цілком із сайтів мап відеоігор і малюйте на ній із масштабуванням і прокручуванням."
+ },
+ "cmdDesc": {
+  "message": "Відкрити drawingamemaps"
+ },
+ "menuMyMaps": {
+  "message": "Мої мапи"
+ },
+ "searching": {
+  "message": "Шукаю мапу…"
+ },
+ "hint": {
+  "message": "Мапа виходить не цілком? Посуньте або наблизьте мапу й відкрийте це знову або натисніть «Перезавантажити й проаналізувати»."
+ },
+ "reload": {
+  "message": "Перезавантажити й проаналізувати"
+ },
+ "reloadTitle": {
+  "message": "Перезавантажує сторінку й від самого початку стежить, які зображення вона завантажує"
+ },
+ "noAccess": {
+  "message": "Цю сторінку неможливо прочитати (внутрішні сторінки браузера, крамниця розширень…)."
+ },
+ "optTiles": {
+  "message": "Уся мапа"
+ },
+ "optTilesSub": {
+  "message": "тайли з $P1$ · видно: $P2$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "optSvg": {
+  "message": "Векторна мапа (SVG)"
+ },
+ "optSvgSub": {
+  "message": "$P1$ · $P2$ КБ · збільшується без втрати чіткості",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "optImage": {
+  "message": "Повне зображення $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "optCapture": {
+  "message": "Лише видиме"
+ },
+ "optCaptureSub": {
+  "message": "знімок поточного екрана"
+ },
+ "errorX": {
+  "message": "Помилка: $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "needPerm": {
+  "message": "Щоб завантажити мапу, потрібен дозвіл на читання $P1$.",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "grant": {
+  "message": "Надати дозвіл"
+ },
+ "permDenied": {
+  "message": "Без цього дозволу мапу не завантажити. Можна повернутися й вибрати «Лише видиме»."
+ },
+ "dlImage": {
+  "message": "Завантажую зображення…"
+ },
+ "errNoImage": {
+  "message": "Сервер не повернув зображення."
+ },
+ "preparing": {
+  "message": "Готую мапу: $P1$ / $P2$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "dlSvg": {
+  "message": "Завантажую векторну мапу…"
+ },
+ "errStatus": {
+  "message": "Сервер відповів $P1$.",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "errSvg": {
+  "message": "Файл не є коректним SVG."
+ },
+ "errSvgSize": {
+  "message": "Не вдається визначити розмір цього SVG."
+ },
+ "svgPick": {
+  "message": "Це векторна мапа: її можна збільшувати скільки завгодно. Виберіть максимальну роздільність."
+ },
+ "nTiles": {
+  "message": "Тайлів: $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "analyzing": {
+  "message": "Аналізую мапу…"
+ },
+ "analyzingN": {
+  "message": "Аналізую мапу… (спроб: $P1$)",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "errNoTiles": {
+  "message": "Сервер не віддає тайли цієї мапи."
+ },
+ "pickLevel": {
+  "message": "Виберіть рівень деталізації. Більше деталей = більше зуму без пікселів, але більше завантаження."
+ },
+ "noEdges": {
+  "message": "Схоже, у мапи немає країв; область обмежено."
+ },
+ "level": {
+  "message": "Рівень $P1$ · $P2$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "levelSub": {
+  "message": "≤$P1$ тайлів · $P2$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "dlLevel": {
+  "message": "Завантажую рівень $P1$ із $P2$: $P3$ / $P4$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   },
+   "p3": {
+    "content": "$3"
+   },
+   "p4": {
+    "content": "$4"
+   }
+  }
+ },
+ "errNoLevel": {
+  "message": "Не вдалося завантажити жодного тайла вибраного рівня."
+ },
+ "assembling": {
+  "message": "Збираю мапу…"
+ },
+ "dlGrid": {
+  "message": "Завантажую сітку тайлів…"
+ },
+ "dlGridN": {
+  "message": "Завантажую сітку тайлів: $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "errTiles": {
+  "message": "Не вдалося розібратися в тайлах цього сайту. Спробуйте «Лише видиме»."
+ },
+ "download": {
+  "message": "Завантажити"
+ },
+ "cancel": {
+  "message": "Скасувати"
+ },
+ "close": {
+  "message": "Закрити"
+ },
+ "confirmClear": {
+  "message": "Видалити всі лінії на цій мапі?"
+ },
+ "copied": {
+  "message": "Зображення скопійовано. Вставте його в Discord, TeamSpeak, WhatsApp… через Ctrl+V."
+ },
+ "copyFail": {
+  "message": "Не вдалося скопіювати: $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "noShare": {
+  "message": "Цей браузер не вміє ділитися файлами. Скористайтеся «Копіювати» і вставте через Ctrl+V."
+ },
+ "shareFail": {
+  "message": "Не вдалося поділитися: $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "assemblingFull": {
+  "message": "Збираю всю мапу…"
+ },
+ "downloaded": {
+  "message": "Завантажено."
+ },
+ "fullSuffix": {
+  "message": " (цілком)"
+ },
+ "deleteMap": {
+  "message": "Видалити мапу"
+ },
+ "confirmDelete": {
+  "message": "Видалити «$P1$» разом із лініями?",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "noMaps": {
+  "message": "Мап ще немає."
+ },
+ "untitled": {
+  "message": "Без назви"
+ },
+ "empty": {
+  "message": "Відкрийте мапу й натисніть Alt+Shift+M (або значок розширення)."
+ },
+ "tGallery": {
+  "message": "Мої мапи (G)"
+ },
+ "tPan": {
+  "message": "Зсув (H) · також пробіл, права або середня кнопка миші"
+ },
+ "tPen": {
+  "message": "Олівець (P)"
+ },
+ "tLine": {
+  "message": "Лінія (L) · Shift фіксує кут"
+ },
+ "tArrow": {
+  "message": "Стрілка (A) · Shift фіксує кут"
+ },
+ "tRect": {
+  "message": "Прямокутник (R) · Shift = квадрат"
+ },
+ "tCircle": {
+  "message": "Коло (C)"
+ },
+ "tText": {
+  "message": "Текст (T)"
+ },
+ "tErase": {
+  "message": "Стерти лінію (E)"
+ },
+ "tColor": {
+  "message": "Інший колір"
+ },
+ "tWidth": {
+  "message": "Товщина"
+ },
+ "tUndo": {
+  "message": "Скасувати (Ctrl+Z)"
+ },
+ "tRedo": {
+  "message": "Повторити (Ctrl+Y)"
+ },
+ "tFit": {
+  "message": "Вписати (F)"
+ },
+ "tClear": {
+  "message": "Видалити всі лінії"
+ },
+ "tShare": {
+  "message": "Копіювати, завантажити або поділитися (Ctrl+C копіює видиме)"
+ },
+ "tSource": {
+  "message": "Відкрити вихідний сайт"
+ },
+ "mCopyView": {
+  "message": "📋 Копіювати видиме"
+ },
+ "mCopyFull": {
+  "message": "📋 Копіювати всю мапу"
+ },
+ "mDlView": {
+  "message": "⬇ Завантажити видиме"
+ },
+ "mDlFull": {
+  "message": "⬇ Завантажити всю мапу"
+ },
+ "mShare": {
+  "message": "📤 Поділитися видимим…"
+ },
+ "mHint": {
+  "message": "Для Discord, TeamSpeak або WhatsApp: скопіюйте й вставте в чат через Ctrl+V."
+ }
+}

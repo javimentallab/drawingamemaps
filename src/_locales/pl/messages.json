@@ -1,0 +1,346 @@
+{
+ "extDesc": {
+  "message": "Pobierz całą mapę ze stron z mapami gier i rysuj na niej z powiększaniem i przesuwaniem."
+ },
+ "cmdDesc": {
+  "message": "Otwórz drawingamemaps"
+ },
+ "menuMyMaps": {
+  "message": "Moje mapy"
+ },
+ "searching": {
+  "message": "Szukam mapy…"
+ },
+ "hint": {
+  "message": "Mapa nie wychodzi cała? Przesuń lub przybliż mapę i otwórz to ponownie albo kliknij „Przeładuj i przeanalizuj”."
+ },
+ "reload": {
+  "message": "Przeładuj i przeanalizuj"
+ },
+ "reloadTitle": {
+  "message": "Przeładowuje stronę, obserwując od początku, jakie obrazy wczytuje"
+ },
+ "noAccess": {
+  "message": "Tej strony nie da się odczytać (wewnętrzne strony przeglądarki, sklep z rozszerzeniami…)."
+ },
+ "optTiles": {
+  "message": "Cała mapa"
+ },
+ "optTilesSub": {
+  "message": "kafelki z $P1$ · widziane: $P2$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "optSvg": {
+  "message": "Mapa wektorowa (SVG)"
+ },
+ "optSvgSub": {
+  "message": "$P1$ · $P2$ KB · powiększa się bez utraty ostrości",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "optImage": {
+  "message": "Pełny obraz $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "optCapture": {
+  "message": "Tylko to, co widać"
+ },
+ "optCaptureSub": {
+  "message": "zrzut bieżącego widoku"
+ },
+ "errorX": {
+  "message": "Błąd: $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "needPerm": {
+  "message": "Aby pobrać mapę, potrzebne jest uprawnienie do odczytu $P1$.",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "grant": {
+  "message": "Udziel uprawnienia"
+ },
+ "permDenied": {
+  "message": "Bez tego uprawnienia mapy nie da się pobrać. Możesz wrócić i użyć „Tylko to, co widać”."
+ },
+ "dlImage": {
+  "message": "Pobieram obraz…"
+ },
+ "errNoImage": {
+  "message": "Serwer nie zwrócił obrazu."
+ },
+ "preparing": {
+  "message": "Przygotowuję mapę: $P1$ / $P2$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "dlSvg": {
+  "message": "Pobieram mapę wektorową…"
+ },
+ "errStatus": {
+  "message": "Serwer odpowiedział $P1$.",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "errSvg": {
+  "message": "Plik nie jest poprawnym SVG."
+ },
+ "errSvgSize": {
+  "message": "Nie da się ustalić rozmiaru tego SVG."
+ },
+ "svgPick": {
+  "message": "To mapa wektorowa: możesz ją powiększać, ile chcesz. Wybierz maksymalną rozdzielczość."
+ },
+ "nTiles": {
+  "message": "Kafelki: $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "analyzing": {
+  "message": "Analizuję mapę…"
+ },
+ "analyzingN": {
+  "message": "Analizuję mapę… (próby: $P1$)",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "errNoTiles": {
+  "message": "Serwer nie zwraca kafelków tej mapy."
+ },
+ "pickLevel": {
+  "message": "Wybierz poziom szczegółów. Więcej szczegółów = większe przybliżenie bez pikseli, ale większe pobieranie."
+ },
+ "noEdges": {
+  "message": "Mapa chyba nie ma krawędzi; obszar został ograniczony."
+ },
+ "level": {
+  "message": "Poziom $P1$ · $P2$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "levelSub": {
+  "message": "≤$P1$ kafelków · $P2$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "dlLevel": {
+  "message": "Pobieram poziom $P1$ z $P2$: $P3$ / $P4$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   },
+   "p3": {
+    "content": "$3"
+   },
+   "p4": {
+    "content": "$4"
+   }
+  }
+ },
+ "errNoLevel": {
+  "message": "Nie udało się pobrać żadnego kafelka z wybranego poziomu."
+ },
+ "assembling": {
+  "message": "Składam mapę…"
+ },
+ "dlGrid": {
+  "message": "Pobieram siatkę kafelków…"
+ },
+ "dlGridN": {
+  "message": "Pobieram siatkę kafelków: $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "errTiles": {
+  "message": "Nie udało mi się zrozumieć kafelków tej strony. Spróbuj „Tylko to, co widać”."
+ },
+ "download": {
+  "message": "Pobierz"
+ },
+ "cancel": {
+  "message": "Anuluj"
+ },
+ "close": {
+  "message": "Zamknij"
+ },
+ "confirmClear": {
+  "message": "Usunąć wszystkie linie z tej mapy?"
+ },
+ "copied": {
+  "message": "Obraz skopiowany. Wklej go w Discordzie, TeamSpeaku, WhatsAppie… przez Ctrl+V."
+ },
+ "copyFail": {
+  "message": "Nie udało się skopiować: $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "noShare": {
+  "message": "Ta przeglądarka nie może udostępniać plików. Użyj „Kopiuj” i wklej przez Ctrl+V."
+ },
+ "shareFail": {
+  "message": "Nie udało się udostępnić: $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "assemblingFull": {
+  "message": "Składam całą mapę…"
+ },
+ "downloaded": {
+  "message": "Pobrano."
+ },
+ "fullSuffix": {
+  "message": " (cała)"
+ },
+ "deleteMap": {
+  "message": "Usuń mapę"
+ },
+ "confirmDelete": {
+  "message": "Usunąć „$P1$” i jej linie?",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "noMaps": {
+  "message": "Nie ma jeszcze map."
+ },
+ "untitled": {
+  "message": "Bez nazwy"
+ },
+ "empty": {
+  "message": "Otwórz mapę i naciśnij Alt+Shift+M (albo ikonę rozszerzenia)."
+ },
+ "tGallery": {
+  "message": "Moje mapy (G)"
+ },
+ "tPan": {
+  "message": "Przesuń (H) · także spacja, prawy lub środkowy przycisk"
+ },
+ "tPen": {
+  "message": "Ołówek (P)"
+ },
+ "tLine": {
+  "message": "Linia (L) · Shift blokuje kąt"
+ },
+ "tArrow": {
+  "message": "Strzałka (A) · Shift blokuje kąt"
+ },
+ "tRect": {
+  "message": "Prostokąt (R) · Shift = kwadrat"
+ },
+ "tCircle": {
+  "message": "Okrąg (C)"
+ },
+ "tText": {
+  "message": "Tekst (T)"
+ },
+ "tErase": {
+  "message": "Usuń linię (E)"
+ },
+ "tColor": {
+  "message": "Inny kolor"
+ },
+ "tWidth": {
+  "message": "Grubość"
+ },
+ "tUndo": {
+  "message": "Cofnij (Ctrl+Z)"
+ },
+ "tRedo": {
+  "message": "Ponów (Ctrl+Y)"
+ },
+ "tFit": {
+  "message": "Dopasuj (F)"
+ },
+ "tClear": {
+  "message": "Usuń wszystkie linie"
+ },
+ "tShare": {
+  "message": "Kopiuj, pobierz lub udostępnij (Ctrl+C kopiuje to, co widać)"
+ },
+ "tSource": {
+  "message": "Otwórz oryginalną stronę"
+ },
+ "mCopyView": {
+  "message": "📋 Kopiuj to, co widać"
+ },
+ "mCopyFull": {
+  "message": "📋 Kopiuj całą mapę"
+ },
+ "mDlView": {
+  "message": "⬇ Pobierz to, co widać"
+ },
+ "mDlFull": {
+  "message": "⬇ Pobierz całą mapę"
+ },
+ "mShare": {
+  "message": "📤 Udostępnij to, co widać…"
+ },
+ "mHint": {
+  "message": "Dla Discorda, TeamSpeaka lub WhatsAppa: skopiuj i wklej do czatu przez Ctrl+V."
+ }
+}

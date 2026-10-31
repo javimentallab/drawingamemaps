@@ -1,0 +1,346 @@
+{
+ "extDesc": {
+  "message": "Download de hele kaart van kaartsites voor videogames en teken erop, met zoomen en verschuiven."
+ },
+ "cmdDesc": {
+  "message": "drawingamemaps openen"
+ },
+ "menuMyMaps": {
+  "message": "Mijn kaarten"
+ },
+ "searching": {
+  "message": "Kaart zoeken…"
+ },
+ "hint": {
+  "message": "Komt de kaart niet helemaal mee? Verschuif of zoom de kaart en open dit opnieuw, of klik op ‘Herladen en analyseren’."
+ },
+ "reload": {
+  "message": "Herladen en analyseren"
+ },
+ "reloadTitle": {
+  "message": "Herlaadt de pagina en kijkt vanaf het begin welke afbeeldingen ze laadt"
+ },
+ "noAccess": {
+  "message": "Deze pagina kan niet gelezen worden (interne browserpagina’s, extensiewinkel…)."
+ },
+ "optTiles": {
+  "message": "Hele kaart"
+ },
+ "optTilesSub": {
+  "message": "tegels van $P1$ · $P2$ gezien",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "optSvg": {
+  "message": "Vectorkaart (SVG)"
+ },
+ "optSvgSub": {
+  "message": "$P1$ · $P2$ KB · vergroot zonder scherpte te verliezen",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "optImage": {
+  "message": "Volledige afbeelding $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "optCapture": {
+  "message": "Alleen wat zichtbaar is"
+ },
+ "optCaptureSub": {
+  "message": "schermafbeelding van het huidige beeld"
+ },
+ "errorX": {
+  "message": "Fout: $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "needPerm": {
+  "message": "Om de kaart te downloaden is toestemming nodig om $P1$ te lezen.",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "grant": {
+  "message": "Toestemming geven"
+ },
+ "permDenied": {
+  "message": "Zonder die toestemming kan de kaart niet worden gedownload. Je kunt teruggaan en ‘Alleen wat zichtbaar is’ gebruiken."
+ },
+ "dlImage": {
+  "message": "Afbeelding downloaden…"
+ },
+ "errNoImage": {
+  "message": "De server heeft de afbeelding niet teruggestuurd."
+ },
+ "preparing": {
+  "message": "Kaart voorbereiden: $P1$ / $P2$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "dlSvg": {
+  "message": "Vectorkaart downloaden…"
+ },
+ "errStatus": {
+  "message": "De server antwoordde $P1$.",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "errSvg": {
+  "message": "Het bestand is geen geldige SVG."
+ },
+ "errSvgSize": {
+  "message": "De grootte van deze SVG is niet te bepalen."
+ },
+ "svgPick": {
+  "message": "Het is een vectorkaart: je kunt zo ver inzoomen als je wilt. Kies de maximale resolutie."
+ },
+ "nTiles": {
+  "message": "$P1$ tegels",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "analyzing": {
+  "message": "Kaart analyseren…"
+ },
+ "analyzingN": {
+  "message": "Kaart analyseren… ($P1$ pogingen)",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "errNoTiles": {
+  "message": "De server geeft de tegels van deze kaart niet terug."
+ },
+ "pickLevel": {
+  "message": "Kies het detailniveau. Meer detail = meer zoom zonder pixels, maar een grotere download."
+ },
+ "noEdges": {
+  "message": "De kaart lijkt geen randen te hebben; het gebied is begrensd."
+ },
+ "level": {
+  "message": "Niveau $P1$ · $P2$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "levelSub": {
+  "message": "≤$P1$ tegels · $P2$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "dlLevel": {
+  "message": "Niveau $P1$ van $P2$ downloaden: $P3$ / $P4$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   },
+   "p3": {
+    "content": "$3"
+   },
+   "p4": {
+    "content": "$4"
+   }
+  }
+ },
+ "errNoLevel": {
+  "message": "Er kon geen enkele tegel van het gekozen niveau worden gedownload."
+ },
+ "assembling": {
+  "message": "Kaart samenstellen…"
+ },
+ "dlGrid": {
+  "message": "Tegelraster downloaden…"
+ },
+ "dlGridN": {
+  "message": "Tegelraster downloaden: $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "errTiles": {
+  "message": "Ik kon de tegels van deze site niet ontcijferen. Probeer ‘Alleen wat zichtbaar is’."
+ },
+ "download": {
+  "message": "Downloaden"
+ },
+ "cancel": {
+  "message": "Annuleren"
+ },
+ "close": {
+  "message": "Sluiten"
+ },
+ "confirmClear": {
+  "message": "Alle lijnen op deze kaart wissen?"
+ },
+ "copied": {
+  "message": "Afbeelding gekopieerd. Plak hem in Discord, TeamSpeak, WhatsApp… met Ctrl+V."
+ },
+ "copyFail": {
+  "message": "Kopiëren mislukt: $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "noShare": {
+  "message": "Deze browser kan geen bestanden delen. Gebruik ‘Kopiëren’ en plak met Ctrl+V."
+ },
+ "shareFail": {
+  "message": "Delen mislukt: $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "assemblingFull": {
+  "message": "Hele kaart samenstellen…"
+ },
+ "downloaded": {
+  "message": "Gedownload."
+ },
+ "fullSuffix": {
+  "message": " (heel)"
+ },
+ "deleteMap": {
+  "message": "Kaart verwijderen"
+ },
+ "confirmDelete": {
+  "message": "‘$P1$’ en de lijnen erop verwijderen?",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "noMaps": {
+  "message": "Nog geen kaarten."
+ },
+ "untitled": {
+  "message": "Naamloos"
+ },
+ "empty": {
+  "message": "Open een kaart en druk op Alt+Shift+M (of op het pictogram van de extensie)."
+ },
+ "tGallery": {
+  "message": "Mijn kaarten (G)"
+ },
+ "tPan": {
+  "message": "Verschuiven (H) · ook spatie, rechter- of middelste muisknop"
+ },
+ "tPen": {
+  "message": "Potlood (P)"
+ },
+ "tLine": {
+  "message": "Lijn (L) · Shift zet de hoek vast"
+ },
+ "tArrow": {
+  "message": "Pijl (A) · Shift zet de hoek vast"
+ },
+ "tRect": {
+  "message": "Rechthoek (R) · Shift = vierkant"
+ },
+ "tCircle": {
+  "message": "Cirkel (C)"
+ },
+ "tText": {
+  "message": "Tekst (T)"
+ },
+ "tErase": {
+  "message": "Lijn wissen (E)"
+ },
+ "tColor": {
+  "message": "Andere kleur"
+ },
+ "tWidth": {
+  "message": "Dikte"
+ },
+ "tUndo": {
+  "message": "Ongedaan maken (Ctrl+Z)"
+ },
+ "tRedo": {
+  "message": "Opnieuw (Ctrl+Y)"
+ },
+ "tFit": {
+  "message": "Passend maken (F)"
+ },
+ "tClear": {
+  "message": "Alle lijnen wissen"
+ },
+ "tShare": {
+  "message": "Kopiëren, downloaden of delen (Ctrl+C kopieert wat zichtbaar is)"
+ },
+ "tSource": {
+  "message": "Originele site openen"
+ },
+ "mCopyView": {
+  "message": "📋 Kopieer wat zichtbaar is"
+ },
+ "mCopyFull": {
+  "message": "📋 Kopieer de hele kaart"
+ },
+ "mDlView": {
+  "message": "⬇ Download wat zichtbaar is"
+ },
+ "mDlFull": {
+  "message": "⬇ Download de hele kaart"
+ },
+ "mShare": {
+  "message": "📤 Deel wat zichtbaar is…"
+ },
+ "mHint": {
+  "message": "Voor Discord, TeamSpeak of WhatsApp: kopieer en plak in de chat met Ctrl+V."
+ }
+}

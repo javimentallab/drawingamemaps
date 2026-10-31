@@ -1,0 +1,346 @@
+{
+ "extDesc": {
+  "message": "Lade die ganze Karte von Videospiel-Kartenseiten herunter und zeichne darauf, mit Zoom und Verschieben."
+ },
+ "cmdDesc": {
+  "message": "drawingamemaps öffnen"
+ },
+ "menuMyMaps": {
+  "message": "Meine Karten"
+ },
+ "searching": {
+  "message": "Suche die Karte…"
+ },
+ "hint": {
+  "message": "Die Karte kommt nicht ganz? Verschiebe oder zoome die Karte und öffne dies erneut, oder klicke auf „Neu laden und analysieren“."
+ },
+ "reload": {
+  "message": "Neu laden und analysieren"
+ },
+ "reloadTitle": {
+  "message": "Lädt die Seite neu und beobachtet von Anfang an, welche Bilder sie lädt"
+ },
+ "noAccess": {
+  "message": "Diese Seite lässt sich nicht lesen (interne Browserseiten, Erweiterungsshop…)."
+ },
+ "optTiles": {
+  "message": "Ganze Karte"
+ },
+ "optTilesSub": {
+  "message": "Kacheln von $P1$ · $P2$ gesehen",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "optSvg": {
+  "message": "Vektorkarte (SVG)"
+ },
+ "optSvgSub": {
+  "message": "$P1$ · $P2$ KB · vergrößerbar ohne Schärfeverlust",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "optImage": {
+  "message": "Ganzes Bild $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "optCapture": {
+  "message": "Nur das Sichtbare"
+ },
+ "optCaptureSub": {
+  "message": "Bildschirmfoto der aktuellen Ansicht"
+ },
+ "errorX": {
+  "message": "Fehler: $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "needPerm": {
+  "message": "Zum Herunterladen der Karte wird die Berechtigung benötigt, $P1$ zu lesen.",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "grant": {
+  "message": "Berechtigung erteilen"
+ },
+ "permDenied": {
+  "message": "Ohne diese Berechtigung kann die Karte nicht heruntergeladen werden. Du kannst zurückgehen und „Nur das Sichtbare“ nutzen."
+ },
+ "dlImage": {
+  "message": "Lade das Bild herunter…"
+ },
+ "errNoImage": {
+  "message": "Der Server hat das Bild nicht geliefert."
+ },
+ "preparing": {
+  "message": "Bereite die Karte vor: $P1$ / $P2$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "dlSvg": {
+  "message": "Lade die Vektorkarte herunter…"
+ },
+ "errStatus": {
+  "message": "Der Server hat mit $P1$ geantwortet.",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "errSvg": {
+  "message": "Die Datei ist kein gültiges SVG."
+ },
+ "errSvgSize": {
+  "message": "Die Größe dieses SVG ist nicht zu ermitteln."
+ },
+ "svgPick": {
+  "message": "Es ist eine Vektorkarte: Du kannst sie beliebig vergrößern. Wähle die maximale Auflösung."
+ },
+ "nTiles": {
+  "message": "$P1$ Kacheln",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "analyzing": {
+  "message": "Analysiere die Karte…"
+ },
+ "analyzingN": {
+  "message": "Analysiere die Karte… ($P1$ Versuche)",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "errNoTiles": {
+  "message": "Der Server liefert die Kacheln dieser Karte nicht."
+ },
+ "pickLevel": {
+  "message": "Wähle die Detailstufe. Mehr Detail = mehr Zoom ohne Verpixeln, aber ein größerer Download."
+ },
+ "noEdges": {
+  "message": "Die Karte scheint keine Ränder zu haben; der Bereich wurde begrenzt."
+ },
+ "level": {
+  "message": "Stufe $P1$ · $P2$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "levelSub": {
+  "message": "≤$P1$ Kacheln · $P2$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "dlLevel": {
+  "message": "Lade Stufe $P1$ von $P2$: $P3$ / $P4$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   },
+   "p3": {
+    "content": "$3"
+   },
+   "p4": {
+    "content": "$4"
+   }
+  }
+ },
+ "errNoLevel": {
+  "message": "Von der gewählten Stufe ließ sich keine einzige Kachel herunterladen."
+ },
+ "assembling": {
+  "message": "Setze die Karte zusammen…"
+ },
+ "dlGrid": {
+  "message": "Lade das Kachelraster herunter…"
+ },
+ "dlGridN": {
+  "message": "Lade das Kachelraster herunter: $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "errTiles": {
+  "message": "Die Kacheln dieser Seite konnte ich nicht deuten. Versuch es mit „Nur das Sichtbare“."
+ },
+ "download": {
+  "message": "Herunterladen"
+ },
+ "cancel": {
+  "message": "Abbrechen"
+ },
+ "close": {
+  "message": "Schließen"
+ },
+ "confirmClear": {
+  "message": "Alle Striche auf dieser Karte löschen?"
+ },
+ "copied": {
+  "message": "Bild kopiert. Füge es mit Strg+V in Discord, TeamSpeak, WhatsApp… ein."
+ },
+ "copyFail": {
+  "message": "Kopieren fehlgeschlagen: $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "noShare": {
+  "message": "Dieser Browser kann keine Dateien teilen. Nutze „Kopieren“ und füge mit Strg+V ein."
+ },
+ "shareFail": {
+  "message": "Teilen fehlgeschlagen: $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "assemblingFull": {
+  "message": "Setze die ganze Karte zusammen…"
+ },
+ "downloaded": {
+  "message": "Heruntergeladen."
+ },
+ "fullSuffix": {
+  "message": " (ganz)"
+ },
+ "deleteMap": {
+  "message": "Karte löschen"
+ },
+ "confirmDelete": {
+  "message": "„$P1$“ und seine Striche löschen?",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "noMaps": {
+  "message": "Noch keine Karten."
+ },
+ "untitled": {
+  "message": "Ohne Namen"
+ },
+ "empty": {
+  "message": "Öffne eine Karte und drücke Alt+Umschalt+M (oder das Symbol der Erweiterung)."
+ },
+ "tGallery": {
+  "message": "Meine Karten (G)"
+ },
+ "tPan": {
+  "message": "Verschieben (H) · auch Leertaste, rechte oder mittlere Maustaste"
+ },
+ "tPen": {
+  "message": "Stift (P)"
+ },
+ "tLine": {
+  "message": "Linie (L) · Umschalt rastet den Winkel ein"
+ },
+ "tArrow": {
+  "message": "Pfeil (A) · Umschalt rastet den Winkel ein"
+ },
+ "tRect": {
+  "message": "Rechteck (R) · Umschalt = Quadrat"
+ },
+ "tCircle": {
+  "message": "Kreis (C)"
+ },
+ "tText": {
+  "message": "Text (T)"
+ },
+ "tErase": {
+  "message": "Strich löschen (E)"
+ },
+ "tColor": {
+  "message": "Andere Farbe"
+ },
+ "tWidth": {
+  "message": "Stärke"
+ },
+ "tUndo": {
+  "message": "Rückgängig (Strg+Z)"
+ },
+ "tRedo": {
+  "message": "Wiederholen (Strg+Y)"
+ },
+ "tFit": {
+  "message": "Einpassen (F)"
+ },
+ "tClear": {
+  "message": "Alle Striche löschen"
+ },
+ "tShare": {
+  "message": "Kopieren, herunterladen oder teilen (Strg+C kopiert das Sichtbare)"
+ },
+ "tSource": {
+  "message": "Originalseite öffnen"
+ },
+ "mCopyView": {
+  "message": "📋 Das Sichtbare kopieren"
+ },
+ "mCopyFull": {
+  "message": "📋 Die ganze Karte kopieren"
+ },
+ "mDlView": {
+  "message": "⬇ Das Sichtbare herunterladen"
+ },
+ "mDlFull": {
+  "message": "⬇ Die ganze Karte herunterladen"
+ },
+ "mShare": {
+  "message": "📤 Das Sichtbare teilen…"
+ },
+ "mHint": {
+  "message": "Für Discord, TeamSpeak oder WhatsApp: kopieren und mit Strg+V in den Chat einfügen."
+ }
+}

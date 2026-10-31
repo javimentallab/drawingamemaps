@@ -1,0 +1,346 @@
+{
+ "extDesc": {
+  "message": "ดาวน์โหลดแผนที่ทั้งหมดจากเว็บแผนที่ของวิดีโอเกม แล้ววาดทับได้พร้อมซูมและเลื่อน"
+ },
+ "cmdDesc": {
+  "message": "เปิด drawingamemaps"
+ },
+ "menuMyMaps": {
+  "message": "แผนที่ของฉัน"
+ },
+ "searching": {
+  "message": "กำลังหาแผนที่…"
+ },
+ "hint": {
+  "message": "แผนที่ออกมาไม่ครบใช่ไหม ลองเลื่อนหรือซูมแผนที่แล้วเปิดอันนี้อีกครั้ง หรือกด “โหลดใหม่และวิเคราะห์”"
+ },
+ "reload": {
+  "message": "โหลดใหม่และวิเคราะห์"
+ },
+ "reloadTitle": {
+  "message": "โหลดหน้าใหม่และเฝ้าดูตั้งแต่ต้นว่าโหลดภาพอะไรบ้าง"
+ },
+ "noAccess": {
+  "message": "อ่านหน้านี้ไม่ได้ (หน้าภายในของเบราว์เซอร์ ร้านส่วนขยาย ฯลฯ)"
+ },
+ "optTiles": {
+  "message": "แผนที่ทั้งหมด"
+ },
+ "optTilesSub": {
+  "message": "ไทล์จาก $P1$ · เห็นแล้ว $P2$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "optSvg": {
+  "message": "แผนที่เวกเตอร์ (SVG)"
+ },
+ "optSvgSub": {
+  "message": "$P1$ · $P2$ KB · ขยายได้โดยไม่เสียความคมชัด",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "optImage": {
+  "message": "ภาพเต็ม $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "optCapture": {
+  "message": "เฉพาะส่วนที่เห็น"
+ },
+ "optCaptureSub": {
+  "message": "จับภาพหน้าจอปัจจุบัน"
+ },
+ "errorX": {
+  "message": "ข้อผิดพลาด: $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "needPerm": {
+  "message": "ต้องได้รับสิทธิ์อ่าน $P1$ จึงจะดาวน์โหลดแผนที่ได้",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "grant": {
+  "message": "ให้สิทธิ์"
+ },
+ "permDenied": {
+  "message": "หากไม่มีสิทธิ์นั้นจะดาวน์โหลดแผนที่ไม่ได้ คุณกลับไปใช้ “เฉพาะส่วนที่เห็น” ได้"
+ },
+ "dlImage": {
+  "message": "กำลังดาวน์โหลดภาพ…"
+ },
+ "errNoImage": {
+  "message": "เซิร์ฟเวอร์ไม่ได้ส่งภาพกลับมา"
+ },
+ "preparing": {
+  "message": "กำลังเตรียมแผนที่: $P1$ / $P2$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "dlSvg": {
+  "message": "กำลังดาวน์โหลดแผนที่เวกเตอร์…"
+ },
+ "errStatus": {
+  "message": "เซิร์ฟเวอร์ตอบกลับ $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "errSvg": {
+  "message": "ไฟล์นี้ไม่ใช่ SVG ที่ถูกต้อง"
+ },
+ "errSvgSize": {
+  "message": "ไม่ทราบขนาดของ SVG นี้"
+ },
+ "svgPick": {
+  "message": "นี่คือแผนที่เวกเตอร์ ขยายได้มากเท่าที่ต้องการ เลือกความละเอียดสูงสุด"
+ },
+ "nTiles": {
+  "message": "$P1$ ไทล์",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "analyzing": {
+  "message": "กำลังวิเคราะห์แผนที่…"
+ },
+ "analyzingN": {
+  "message": "กำลังวิเคราะห์แผนที่… (ลอง $P1$ ครั้ง)",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "errNoTiles": {
+  "message": "เซิร์ฟเวอร์ไม่ส่งไทล์ของแผนที่นี้"
+ },
+ "pickLevel": {
+  "message": "เลือกระดับรายละเอียด ยิ่งละเอียด = ซูมได้มากโดยไม่แตก แต่ดาวน์โหลดมากขึ้น"
+ },
+ "noEdges": {
+  "message": "แผนที่ดูเหมือนไม่มีขอบ จึงจำกัดพื้นที่ไว้"
+ },
+ "level": {
+  "message": "ระดับ $P1$ · $P2$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "levelSub": {
+  "message": "≤$P1$ ไทล์ · $P2$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "dlLevel": {
+  "message": "กำลังดาวน์โหลดระดับ $P1$ จาก $P2$: $P3$ / $P4$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   },
+   "p3": {
+    "content": "$3"
+   },
+   "p4": {
+    "content": "$4"
+   }
+  }
+ },
+ "errNoLevel": {
+  "message": "ดาวน์โหลดไทล์ของระดับที่เลือกไม่ได้เลย"
+ },
+ "assembling": {
+  "message": "กำลังประกอบแผนที่…"
+ },
+ "dlGrid": {
+  "message": "กำลังดาวน์โหลดตารางไทล์…"
+ },
+ "dlGridN": {
+  "message": "กำลังดาวน์โหลดตารางไทล์: $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "errTiles": {
+  "message": "ตีความไทล์ของเว็บนี้ไม่ได้ ลองใช้ “เฉพาะส่วนที่เห็น”"
+ },
+ "download": {
+  "message": "ดาวน์โหลด"
+ },
+ "cancel": {
+  "message": "ยกเลิก"
+ },
+ "close": {
+  "message": "ปิด"
+ },
+ "confirmClear": {
+  "message": "ลบเส้นทั้งหมดบนแผนที่นี้ไหม"
+ },
+ "copied": {
+  "message": "คัดลอกภาพแล้ว วางใน Discord, TeamSpeak, WhatsApp ฯลฯ ด้วย Ctrl+V"
+ },
+ "copyFail": {
+  "message": "คัดลอกไม่ได้: $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "noShare": {
+  "message": "เบราว์เซอร์นี้แชร์ไฟล์ไม่ได้ ใช้ “คัดลอก” แล้ววางด้วย Ctrl+V"
+ },
+ "shareFail": {
+  "message": "แชร์ไม่ได้: $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "assemblingFull": {
+  "message": "กำลังประกอบแผนที่ทั้งหมด…"
+ },
+ "downloaded": {
+  "message": "ดาวน์โหลดแล้ว"
+ },
+ "fullSuffix": {
+  "message": " (ทั้งหมด)"
+ },
+ "deleteMap": {
+  "message": "ลบแผนที่"
+ },
+ "confirmDelete": {
+  "message": "ลบ “$P1$” และเส้นของมันไหม",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "noMaps": {
+  "message": "ยังไม่มีแผนที่"
+ },
+ "untitled": {
+  "message": "ไม่มีชื่อ"
+ },
+ "empty": {
+  "message": "เปิดแผนที่แล้วกด Alt+Shift+M (หรือไอคอนของส่วนขยาย)"
+ },
+ "tGallery": {
+  "message": "แผนที่ของฉัน (G)"
+ },
+ "tPan": {
+  "message": "เลื่อน (H) · ใช้ Space ปุ่มขวา หรือปุ่มกลางก็ได้"
+ },
+ "tPen": {
+  "message": "ดินสอ (P)"
+ },
+ "tLine": {
+  "message": "เส้นตรง (L) · Shift ล็อกมุม"
+ },
+ "tArrow": {
+  "message": "ลูกศร (A) · Shift ล็อกมุม"
+ },
+ "tRect": {
+  "message": "สี่เหลี่ยม (R) · Shift = จัตุรัส"
+ },
+ "tCircle": {
+  "message": "วงกลม (C)"
+ },
+ "tText": {
+  "message": "ข้อความ (T)"
+ },
+ "tErase": {
+  "message": "ลบเส้น (E)"
+ },
+ "tColor": {
+  "message": "สีอื่น"
+ },
+ "tWidth": {
+  "message": "ความหนา"
+ },
+ "tUndo": {
+  "message": "เลิกทำ (Ctrl+Z)"
+ },
+ "tRedo": {
+  "message": "ทำซ้ำ (Ctrl+Y)"
+ },
+ "tFit": {
+  "message": "พอดีหน้าจอ (F)"
+ },
+ "tClear": {
+  "message": "ลบเส้นทั้งหมด"
+ },
+ "tShare": {
+  "message": "คัดลอก ดาวน์โหลด หรือแชร์ (Ctrl+C คัดลอกส่วนที่เห็น)"
+ },
+ "tSource": {
+  "message": "เปิดเว็บต้นฉบับ"
+ },
+ "mCopyView": {
+  "message": "📋 คัดลอกส่วนที่เห็น"
+ },
+ "mCopyFull": {
+  "message": "📋 คัดลอกแผนที่ทั้งหมด"
+ },
+ "mDlView": {
+  "message": "⬇ ดาวน์โหลดส่วนที่เห็น"
+ },
+ "mDlFull": {
+  "message": "⬇ ดาวน์โหลดแผนที่ทั้งหมด"
+ },
+ "mShare": {
+  "message": "📤 แชร์ส่วนที่เห็น…"
+ },
+ "mHint": {
+  "message": "สำหรับ Discord, TeamSpeak หรือ WhatsApp: คัดลอกแล้ววางในแชตด้วย Ctrl+V"
+ }
+}

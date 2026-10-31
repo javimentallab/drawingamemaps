@@ -1,0 +1,346 @@
+{
+ "extDesc": {
+  "message": "게임 지도 사이트에서 지도 전체를 내려받고, 확대와 이동을 하며 그 위에 그립니다."
+ },
+ "cmdDesc": {
+  "message": "drawingamemaps 열기"
+ },
+ "menuMyMaps": {
+  "message": "내 지도"
+ },
+ "searching": {
+  "message": "지도를 찾는 중…"
+ },
+ "hint": {
+  "message": "지도가 전부 안 나오나요? 지도를 움직이거나 확대한 뒤 다시 열거나 ‘새로 고침 후 분석’을 누르세요."
+ },
+ "reload": {
+  "message": "새로 고침 후 분석"
+ },
+ "reloadTitle": {
+  "message": "페이지를 새로 고치고 처음부터 어떤 이미지를 불러오는지 지켜봅니다"
+ },
+ "noAccess": {
+  "message": "이 페이지는 읽을 수 없습니다 (브라우저 내부 페이지, 확장 프로그램 스토어 등)."
+ },
+ "optTiles": {
+  "message": "지도 전체"
+ },
+ "optTilesSub": {
+  "message": "$P1$의 타일 · $P2$ 확인됨",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "optSvg": {
+  "message": "벡터 지도 (SVG)"
+ },
+ "optSvgSub": {
+  "message": "$P1$ · $P2$ KB · 확대해도 선명함 유지",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "optImage": {
+  "message": "전체 이미지 $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "optCapture": {
+  "message": "보이는 부분만"
+ },
+ "optCaptureSub": {
+  "message": "현재 화면 캡처"
+ },
+ "errorX": {
+  "message": "오류: $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "needPerm": {
+  "message": "지도를 내려받으려면 $P1$을(를) 읽을 권한이 필요합니다.",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "grant": {
+  "message": "권한 허용"
+ },
+ "permDenied": {
+  "message": "그 권한 없이는 지도를 내려받을 수 없습니다. 돌아가서 ‘보이는 부분만’을 사용할 수 있습니다."
+ },
+ "dlImage": {
+  "message": "이미지를 내려받는 중…"
+ },
+ "errNoImage": {
+  "message": "서버가 이미지를 돌려주지 않았습니다."
+ },
+ "preparing": {
+  "message": "지도 준비 중: $P1$ / $P2$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "dlSvg": {
+  "message": "벡터 지도를 내려받는 중…"
+ },
+ "errStatus": {
+  "message": "서버 응답: $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "errSvg": {
+  "message": "올바른 SVG 파일이 아닙니다."
+ },
+ "errSvgSize": {
+  "message": "이 SVG의 크기를 알 수 없습니다."
+ },
+ "svgPick": {
+  "message": "벡터 지도라서 원하는 만큼 확대할 수 있습니다. 최대 해상도를 고르세요."
+ },
+ "nTiles": {
+  "message": "타일 $P1$개",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "analyzing": {
+  "message": "지도를 분석하는 중…"
+ },
+ "analyzingN": {
+  "message": "지도를 분석하는 중… (시도 $P1$회)",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "errNoTiles": {
+  "message": "서버가 이 지도의 타일을 주지 않습니다."
+ },
+ "pickLevel": {
+  "message": "세부 수준을 고르세요. 세부가 많을수록 깨지지 않고 확대되지만 내려받을 양이 늘어납니다."
+ },
+ "noEdges": {
+  "message": "지도에 가장자리가 없는 것 같아 범위를 제한했습니다."
+ },
+ "level": {
+  "message": "수준 $P1$ · $P2$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "levelSub": {
+  "message": "타일 ≤$P1$개 · $P2$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "dlLevel": {
+  "message": "수준 $P1$/$P2$ 내려받는 중: $P3$ / $P4$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   },
+   "p3": {
+    "content": "$3"
+   },
+   "p4": {
+    "content": "$4"
+   }
+  }
+ },
+ "errNoLevel": {
+  "message": "고른 수준의 타일을 하나도 내려받지 못했습니다."
+ },
+ "assembling": {
+  "message": "지도를 합치는 중…"
+ },
+ "dlGrid": {
+  "message": "타일 격자를 내려받는 중…"
+ },
+ "dlGridN": {
+  "message": "타일 격자를 내려받는 중: $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "errTiles": {
+  "message": "이 사이트의 타일을 해석하지 못했습니다. ‘보이는 부분만’을 시도해 보세요."
+ },
+ "download": {
+  "message": "내려받기"
+ },
+ "cancel": {
+  "message": "취소"
+ },
+ "close": {
+  "message": "닫기"
+ },
+ "confirmClear": {
+  "message": "이 지도의 선을 모두 지울까요?"
+ },
+ "copied": {
+  "message": "이미지를 복사했습니다. Discord, TeamSpeak, WhatsApp 등에 Ctrl+V로 붙여 넣으세요."
+ },
+ "copyFail": {
+  "message": "복사하지 못했습니다: $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "noShare": {
+  "message": "이 브라우저는 파일을 공유할 수 없습니다. ‘복사’를 쓰고 Ctrl+V로 붙여 넣으세요."
+ },
+ "shareFail": {
+  "message": "공유하지 못했습니다: $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "assemblingFull": {
+  "message": "지도 전체를 합치는 중…"
+ },
+ "downloaded": {
+  "message": "내려받았습니다."
+ },
+ "fullSuffix": {
+  "message": " (전체)"
+ },
+ "deleteMap": {
+  "message": "지도 삭제"
+ },
+ "confirmDelete": {
+  "message": "‘$P1$’과(와) 그 선을 삭제할까요?",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "noMaps": {
+  "message": "아직 지도가 없습니다."
+ },
+ "untitled": {
+  "message": "이름 없음"
+ },
+ "empty": {
+  "message": "지도를 열고 Alt+Shift+M(또는 확장 프로그램 아이콘)을 누르세요."
+ },
+ "tGallery": {
+  "message": "내 지도 (G)"
+ },
+ "tPan": {
+  "message": "이동 (H) · 스페이스, 오른쪽 또는 가운데 버튼도 가능"
+ },
+ "tPen": {
+  "message": "연필 (P)"
+ },
+ "tLine": {
+  "message": "직선 (L) · Shift로 각도 고정"
+ },
+ "tArrow": {
+  "message": "화살표 (A) · Shift로 각도 고정"
+ },
+ "tRect": {
+  "message": "사각형 (R) · Shift = 정사각형"
+ },
+ "tCircle": {
+  "message": "원 (C)"
+ },
+ "tText": {
+  "message": "텍스트 (T)"
+ },
+ "tErase": {
+  "message": "선 지우기 (E)"
+ },
+ "tColor": {
+  "message": "다른 색"
+ },
+ "tWidth": {
+  "message": "굵기"
+ },
+ "tUndo": {
+  "message": "실행 취소 (Ctrl+Z)"
+ },
+ "tRedo": {
+  "message": "다시 실행 (Ctrl+Y)"
+ },
+ "tFit": {
+  "message": "화면에 맞춤 (F)"
+ },
+ "tClear": {
+  "message": "선 모두 지우기"
+ },
+ "tShare": {
+  "message": "복사, 내려받기 또는 공유 (Ctrl+C는 보이는 부분 복사)"
+ },
+ "tSource": {
+  "message": "원래 사이트 열기"
+ },
+ "mCopyView": {
+  "message": "📋 보이는 부분 복사"
+ },
+ "mCopyFull": {
+  "message": "📋 지도 전체 복사"
+ },
+ "mDlView": {
+  "message": "⬇ 보이는 부분 내려받기"
+ },
+ "mDlFull": {
+  "message": "⬇ 지도 전체 내려받기"
+ },
+ "mShare": {
+  "message": "📤 보이는 부분 공유…"
+ },
+ "mHint": {
+  "message": "Discord, TeamSpeak, WhatsApp용: 복사한 뒤 채팅에 Ctrl+V로 붙여 넣으세요."
+ }
+}

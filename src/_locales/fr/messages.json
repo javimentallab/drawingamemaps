@@ -1,0 +1,346 @@
+{
+ "extDesc": {
+  "message": "Téléchargez la carte entière des sites de cartes de jeux vidéo et dessinez dessus avec zoom et défilement."
+ },
+ "cmdDesc": {
+  "message": "Ouvrir drawingamemaps"
+ },
+ "menuMyMaps": {
+  "message": "Mes cartes"
+ },
+ "searching": {
+  "message": "Recherche de la carte…"
+ },
+ "hint": {
+  "message": "La carte n’apparaît pas en entier ? Déplacez ou zoomez la carte et rouvrez ceci, ou appuyez sur « Recharger et analyser »."
+ },
+ "reload": {
+  "message": "Recharger et analyser"
+ },
+ "reloadTitle": {
+  "message": "Recharge la page en observant dès le début les images qu’elle charge"
+ },
+ "noAccess": {
+  "message": "Cette page ne peut pas être lue (pages internes du navigateur, boutique d’extensions…)."
+ },
+ "optTiles": {
+  "message": "Carte entière"
+ },
+ "optTilesSub": {
+  "message": "tuiles de $P1$ · $P2$ vues",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "optSvg": {
+  "message": "Carte vectorielle (SVG)"
+ },
+ "optSvgSub": {
+  "message": "$P1$ · $P2$ Ko · s’agrandit sans perdre en netteté",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "optImage": {
+  "message": "Image complète $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "optCapture": {
+  "message": "Seulement ce qui est visible"
+ },
+ "optCaptureSub": {
+  "message": "capture de l’écran actuel"
+ },
+ "errorX": {
+  "message": "Erreur : $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "needPerm": {
+  "message": "Pour télécharger la carte, il faut l’autorisation de lire $P1$.",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "grant": {
+  "message": "Autoriser"
+ },
+ "permDenied": {
+  "message": "Sans cette autorisation, la carte ne peut pas être téléchargée. Vous pouvez revenir et utiliser « Seulement ce qui est visible »."
+ },
+ "dlImage": {
+  "message": "Téléchargement de l’image…"
+ },
+ "errNoImage": {
+  "message": "Le serveur n’a pas renvoyé l’image."
+ },
+ "preparing": {
+  "message": "Préparation de la carte : $P1$ / $P2$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "dlSvg": {
+  "message": "Téléchargement de la carte vectorielle…"
+ },
+ "errStatus": {
+  "message": "Le serveur a répondu $P1$.",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "errSvg": {
+  "message": "Le fichier n’est pas un SVG valide."
+ },
+ "errSvgSize": {
+  "message": "Impossible de connaître la taille de ce SVG."
+ },
+ "svgPick": {
+  "message": "C’est une carte vectorielle : on peut l’agrandir autant qu’on veut. Choisissez la résolution maximale."
+ },
+ "nTiles": {
+  "message": "$P1$ tuiles",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "analyzing": {
+  "message": "Analyse de la carte…"
+ },
+ "analyzingN": {
+  "message": "Analyse de la carte… ($P1$ essais)",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "errNoTiles": {
+  "message": "Le serveur ne renvoie pas les tuiles de cette carte."
+ },
+ "pickLevel": {
+  "message": "Choisissez le niveau de détail. Plus de détail = plus de zoom sans pixellisation, mais un téléchargement plus lourd."
+ },
+ "noEdges": {
+  "message": "La carte ne semble pas avoir de bords ; la zone a été limitée."
+ },
+ "level": {
+  "message": "Niveau $P1$ · $P2$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "levelSub": {
+  "message": "≤$P1$ tuiles · $P2$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   }
+  }
+ },
+ "dlLevel": {
+  "message": "Téléchargement du niveau $P1$ sur $P2$ : $P3$ / $P4$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   },
+   "p2": {
+    "content": "$2"
+   },
+   "p3": {
+    "content": "$3"
+   },
+   "p4": {
+    "content": "$4"
+   }
+  }
+ },
+ "errNoLevel": {
+  "message": "Impossible de télécharger la moindre tuile du niveau choisi."
+ },
+ "assembling": {
+  "message": "Assemblage de la carte…"
+ },
+ "dlGrid": {
+  "message": "Téléchargement de la grille de tuiles…"
+ },
+ "dlGridN": {
+  "message": "Téléchargement de la grille de tuiles : $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "errTiles": {
+  "message": "Je n’ai pas su interpréter les tuiles de ce site. Essayez « Seulement ce qui est visible »."
+ },
+ "download": {
+  "message": "Télécharger"
+ },
+ "cancel": {
+  "message": "Annuler"
+ },
+ "close": {
+  "message": "Fermer"
+ },
+ "confirmClear": {
+  "message": "Effacer tous les tracés de cette carte ?"
+ },
+ "copied": {
+  "message": "Image copiée. Collez-la dans Discord, TeamSpeak, WhatsApp… avec Ctrl+V."
+ },
+ "copyFail": {
+  "message": "Copie impossible : $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "noShare": {
+  "message": "Ce navigateur ne peut pas partager de fichiers. Utilisez « Copier » et collez avec Ctrl+V."
+ },
+ "shareFail": {
+  "message": "Partage impossible : $P1$",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "assemblingFull": {
+  "message": "Assemblage de la carte entière…"
+ },
+ "downloaded": {
+  "message": "Téléchargé."
+ },
+ "fullSuffix": {
+  "message": " (entière)"
+ },
+ "deleteMap": {
+  "message": "Supprimer la carte"
+ },
+ "confirmDelete": {
+  "message": "Supprimer « $P1$ » et ses tracés ?",
+  "placeholders": {
+   "p1": {
+    "content": "$1"
+   }
+  }
+ },
+ "noMaps": {
+  "message": "Aucune carte pour l’instant."
+ },
+ "untitled": {
+  "message": "Sans titre"
+ },
+ "empty": {
+  "message": "Ouvrez une carte et appuyez sur Alt+Shift+M (ou sur l’icône de l’extension)."
+ },
+ "tGallery": {
+  "message": "Mes cartes (G)"
+ },
+ "tPan": {
+  "message": "Déplacer (H) · aussi Espace, clic droit ou clic molette"
+ },
+ "tPen": {
+  "message": "Crayon (P)"
+ },
+ "tLine": {
+  "message": "Ligne (L) · Maj fixe l’angle"
+ },
+ "tArrow": {
+  "message": "Flèche (A) · Maj fixe l’angle"
+ },
+ "tRect": {
+  "message": "Rectangle (R) · Maj = carré"
+ },
+ "tCircle": {
+  "message": "Cercle (C)"
+ },
+ "tText": {
+  "message": "Texte (T)"
+ },
+ "tErase": {
+  "message": "Effacer un tracé (E)"
+ },
+ "tColor": {
+  "message": "Autre couleur"
+ },
+ "tWidth": {
+  "message": "Épaisseur"
+ },
+ "tUndo": {
+  "message": "Annuler (Ctrl+Z)"
+ },
+ "tRedo": {
+  "message": "Rétablir (Ctrl+Y)"
+ },
+ "tFit": {
+  "message": "Ajuster (F)"
+ },
+ "tClear": {
+  "message": "Effacer tous les tracés"
+ },
+ "tShare": {
+  "message": "Copier, télécharger ou partager (Ctrl+C copie ce qui est visible)"
+ },
+ "tSource": {
+  "message": "Ouvrir le site d’origine"
+ },
+ "mCopyView": {
+  "message": "📋 Copier ce qui est visible"
+ },
+ "mCopyFull": {
+  "message": "📋 Copier la carte entière"
+ },
+ "mDlView": {
+  "message": "⬇ Télécharger ce qui est visible"
+ },
+ "mDlFull": {
+  "message": "⬇ Télécharger la carte entière"
+ },
+ "mShare": {
+  "message": "📤 Partager ce qui est visible…"
+ },
+ "mHint": {
+  "message": "Pour Discord, TeamSpeak ou WhatsApp : copiez et collez dans la discussion avec Ctrl+V."
+ }
+}
