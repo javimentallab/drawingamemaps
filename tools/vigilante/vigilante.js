@@ -5,12 +5,12 @@
 //  3. Mira los más jugados de Steam y avisa de los populares que no tienen mapa conocido.
 //  4. Deja un informe HTML en runs/<fecha>/ y manda un resumen por ntfy.
 // Uso: node vigilante.js [--sin-aviso] [--solo-descubrir] [--solo-nuevos]
-const fs = require('fs'), path = require('path'), { spawn, execFileSync } = require('child_process');
+const fs = require('fs'), os = require('os'), path = require('path'), { spawn, execFileSync } = require('child_process');
 
 const DIR = __dirname;
 const EXT_SRC = path.join(DIR, '..', '..', 'src');
 const BOOKMARKS = path.join(process.env.LOCALAPPDATA, 'BraveSoftware', 'Brave-Browser', 'User Data', 'Default', 'Bookmarks');
-const NOTIFY = 'C:\\Users\\javimental\\Scripts\\notify.ps1';
+const NOTIFY = path.join(os.homedir(), 'Scripts', 'notify.ps1');
 const STATE = path.join(DIR, 'state.json');
 const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0 Safari/537.36';
 const PARALLEL = 3, MAX_NEW = 15;

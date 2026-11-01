@@ -38,7 +38,7 @@ def call(url, data=None, headers={}, method='GET'):
 
 def notify(msg):
     subprocess.run(['powershell.exe', '-NoProfile', '-ExecutionPolicy', 'Bypass', '-WindowStyle', 'Hidden', '-File',
-                    r'C:\Users\javimental\Scripts\notify.ps1', '-Title', 'drawingamemaps · Mozilla', '-Message', msg, '-Reintentos', '3'])
+                    os.path.join(os.path.expanduser('~'), 'Scripts', 'notify.ps1'), '-Title', 'drawingamemaps · Mozilla', '-Message', msg, '-Reintentos', '3'])
 
 log('inicio')
 st, a = call(API)
