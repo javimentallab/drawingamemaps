@@ -453,6 +453,7 @@ export async function runJob(jobId) {
   if (!job) return null;
   const ctrl = new AbortController();
   box.hidden = false;
+  delete box.dataset.failed;
   $('jobTitle').textContent = job.title || hostOf(job.url);
   body.replaceChildren();
   go.hidden = true;
@@ -474,6 +475,7 @@ export async function runJob(jobId) {
       return null;
     }
     console.error(e);
+    box.dataset.failed = '1'; // lo usan las pruebas
     say(e.message || String(e));
     body.replaceChildren();
     go.hidden = true;

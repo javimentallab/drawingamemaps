@@ -15,7 +15,7 @@ async function main() {
   fs.rmSync(prof, { recursive: true, force: true });
   const ctx = await chromium.launchPersistentContext(prof, {
     executablePath: BRAVE, headless: false, viewport: { width: 1280, height: 720 },
-    args: [`--disable-extensions-except=${EXT}`, `--load-extension=${EXT}`, '--headless=new', ...(process.env.UILANG ? [`--lang=${process.env.UILANG}`] : [])],
+    args: [`--disable-extensions-except=${EXT}`, `--load-extension=${EXT}`, '--headless=new', '--mute-audio', ...(process.env.UILANG ? [`--lang=${process.env.UILANG}`] : [])],
   });
   try {
     const sw = ctx.serviceWorkers()[0] || await ctx.waitForEvent('serviceworker', { timeout: 15000 });
@@ -60,10 +60,15 @@ async function main() {
     await pop.click('.opt.main');
     const ed = await edP;
     await ed.setViewportSize({ width: 1280, height: 720 });
+    // Si el trabajo falla, la extensión marca la caja y espera a que cierren: no hay que agotar el plazo.
+    const failed = ed.waitForSelector('#job[data-failed]', { state: 'attached', timeout: 600000 }).then(() => 'fail', () => null);
+    const jobError = async () => { res.error = 'La descarga falló: ' + await ed.$eval('#jobMsg', (e) => e.textContent); };
     const r = await Promise.race([
       ed.waitForSelector('#jobGo:not([hidden])', { timeout: 150000 }).then(() => 'go'),
       ed.waitForFunction(() => !location.hash.startsWith('#job='), null, { timeout: 150000 }).then(() => 'done'),
+      failed,
     ]);
+    if (r === 'fail') return await jobError();
     if (r === 'go') {
       // Nivel moderado para que la prueba sea rápida: el mayor con ≤1024 teselas (o 8192 px si es SVG).
       if (await ed.$('#jobBody input[name=res]')) await ed.check('#jobBody input[value="8192"]');
@@ -75,7 +80,8 @@ async function main() {
       }
       await ed.click('#jobGo');
     }
-    await ed.waitForFunction(() => !location.hash.startsWith('#job='), null, { timeout: 400000 });
+    const end = await Promise.race([ed.waitForFunction(() => !location.hash.startsWith('#job='), null, { timeout: 400000 }).then(() => 'done'), failed]);
+    if (end === 'fail') return await jobError();
     const msg = await ed.$eval('#jobMsg', (e) => e.textContent);
     const m = await ed.evaluate(async () => {
       const db = await import('./db.js');

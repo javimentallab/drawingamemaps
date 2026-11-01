@@ -6,6 +6,8 @@
 // en el orden en que salen en la URL ("a" y "b"; cuál es columna y cuál fila se decide
 // al final mirando qué bordes casan).
 
+import { t as msg } from './i18n.js';
+
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const half = (v) => Math.floor(v / 2);
 
@@ -122,17 +124,26 @@ function sniff(b) {
 }
 
 // Descarga una URL y devuelve un Blob de imagen o null (404, 403, HTML de error...).
-export async function fetchImage(url, signal) {
+// Cada intento tiene un plazo para que el servidor empiece a contestar. Con "net" (ver prober),
+// si el servidor no ha contestado ni una vez se corta enseguida en vez de dejar al usuario esperando.
+const ANSWER_MS = 15000;
+export async function fetchImage(url, signal, net) {
   for (let attempt = 0; attempt < 3; attempt++) {
+    const limit = new AbortController();
+    const timer = setTimeout(() => limit.abort(), ANSWER_MS);
     try {
-      const r = await fetch(url, { credentials: 'include', signal });
+      const r = await fetch(url, { credentials: 'include', signal: signal ? AbortSignal.any([signal, limit.signal]) : limit.signal });
+      clearTimeout(timer);
+      if (net) net.alive = true;
       if (r.status === 429 || r.status >= 500) { await sleep(1000 * (attempt + 1)); continue; }
       if (!r.ok) return null;
       const buf = await r.arrayBuffer();
       const type = sniff(new Uint8Array(buf, 0, Math.min(16, buf.byteLength)));
       return type ? new Blob([buf], { type }) : null;
     } catch (e) {
+      clearTimeout(timer);
       if (signal?.aborted) throw e;
+      if (net && !net.alive && ++net.fails >= 2) throw new Error(msg('errNoTiles'));
       await sleep(600 * (attempt + 1));
     }
   }
@@ -141,9 +152,9 @@ export async function fetchImage(url, signal) {
 
 // Caché de sondeo: cada URL se pide una sola vez durante el análisis.
 export function prober(signal) {
-  const cache = new Map();
+  const cache = new Map(), net = { alive: false, fails: 0 };
   const get = (url) => {
-    if (!cache.has(url)) cache.set(url, fetchImage(url, signal));
+    if (!cache.has(url)) cache.set(url, fetchImage(url, signal, net));
     return cache.get(url);
   };
   get.cache = cache;
@@ -207,7 +218,7 @@ export async function explore(t, get, onStep = () => {}) {
     while (valid(z - 1) && z0 - z < 12 && await get(tileUrl(t, z - 1, half(a), half(b)))) { z--; a = half(a); b = half(b); onStep(); }
     if (!best || z < best[0]) best = [z, a, b];
   }
-  if (!best) throw new Error('Las teselas vistas no responden.');
+  if (!best) throw new Error(msg('errNoTiles'));
   const [zmin, sa, sb] = best;
   get.blank = new Set();
   for (const d of [4099, -4099]) {

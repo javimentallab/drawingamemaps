@@ -64,7 +64,21 @@ async function detect() {
       if (w && h) svgs.push({ url: u, w: Math.round(w), h: Math.round(h), bytes: t.length });
     } catch {}
   }
-  return { urls: urls.slice(-6000), big, svgs, full: performance.getEntriesByType('resource').length >= 250, title: document.title, url: location.href };
+  const og = [...document.querySelectorAll('meta[property="og:image"],meta[name="og:image"],meta[name="twitter:image"],meta[property="twitter:image"]')].map((m) => m.content).filter(Boolean);
+  return { urls: urls.slice(-6000), big, svgs, og, full: performance.getEntriesByType('resource').length >= 250, title: document.title, url: location.href };
+}
+
+// Arte de la página (logos, cabeceras, portadas, la imagen para compartir), no el mapa.
+// Una imagen que lo parezca se sigue ofreciendo, pero nunca como opción principal.
+const fileOf = (u) => { try { return decodeURIComponent(new URL(u).pathname.split('/').pop()).toLowerCase(); } catch { return ''; } };
+const ART_WORDS = /(^|[\/_\-. ])(banner|cover|hero|header|logo|favicon|icons?|sprites?|thumbs?|thumbnail|og|opengraph|open-graph|wallpaper|artwork|keyart|key-art|poster|avatar)([\/_\-. ]|$)/i;
+function hasArtName(u) {
+  try { return ART_WORDS.test(decodeURIComponent(new URL(u).pathname).split('/').slice(-2).join('/')); } catch { return false; }
+}
+function isPageArt(b, ogFiles) {
+  const wide = Math.max(b.w, b.h) / Math.min(b.w, b.h);
+  // La imagen para compartir también puede ser el mapa: si es casi cuadrada, no se descarta.
+  return hasArtName(b.url) || wide >= 1.9 || (wide >= 1.3 && ogFiles.has(fileOf(b.url)));
 }
 
 async function activeTab() {
@@ -138,7 +152,7 @@ async function main() {
   try { origin = new URL(tab.url).origin; } catch {}
   if (origin?.startsWith('http') && await chrome.permissions.contains({ origins: [origin + '/*'] })) await ensureEarly(origin).catch(() => {});
   $('reload').onclick = () => reloadAndAnalyze(tab);
-  let found = { urls: [], big: [], svgs: [], title: tab.title, url: tab.url };
+  let found = { urls: [], big: [], svgs: [], og: [], title: tab.title, url: tab.url };
   try {
     const res = await chrome.scripting.executeScript({ target: { tabId: tab.id, allFrames: true }, func: detect });
     for (const r of res) {
@@ -146,6 +160,7 @@ async function main() {
       found.urls.push(...r.result.urls);
       found.big.push(...r.result.big);
       found.svgs.push(...r.result.svgs);
+      found.og.push(...r.result.og);
       found.full ||= r.result.full;
     }
   } catch (e) {
@@ -158,7 +173,10 @@ async function main() {
   }
 
   const templates = inferTemplates(found.urls).slice(0, 2);
-  const bigs = [...new Map(found.big.map((b) => [b.url, b])).values()].sort((a, b) => (b.screen - a.screen) || (b.w * b.h - a.w * a.h)).slice(0, 2);
+  const ogFiles = new Set(found.og.map(fileOf));
+  const bigs = [...new Map(found.big.map((b) => [b.url, { ...b, art: isPageArt(b, ogFiles) }])).values()]
+    .sort((a, b) => (a.art - b.art) || (b.screen - a.screen) || (b.w * b.h - a.w * a.h)).slice(0, 2);
+  const mapImage = bigs.some((b) => !b.art);
   const base = { title: tab.title || '', url: tab.url || '' };
   list.replaceChildren();
 
@@ -167,7 +185,7 @@ async function main() {
     list.append(option('tiles', t('optTiles'), t('optTilesSub', host, tp.count), () =>
       startJob({ ...base, type: 'tiles', tmpl: { ...tp, samples: tp.samples.slice(0, 40) } }), i === 0));
   });
-  const svgs = [...new Map(found.svgs.map((b) => [b.url, b])).values()].sort((a, b) => b.bytes - a.bytes).slice(0, 2);
+  const svgs = [...new Map(found.svgs.filter((b) => !hasArtName(b.url)).map((b) => [b.url, b])).values()].sort((a, b) => b.bytes - a.bytes).slice(0, 2);
   svgs.forEach((b, i) => {
     const file = decodeURIComponent(new URL(b.url).pathname.split('/').pop());
     list.append(option('svg', t('optSvg'), t('optSvgSub', file, Math.round(b.bytes / 1024)),
@@ -175,9 +193,9 @@ async function main() {
   });
   bigs.forEach((b, i) => {
     const file = decodeURIComponent(new URL(b.url).pathname.split('/').pop());
-    list.append(option('image', t('optImage', `${b.w}×${b.h}`), file, () => startJob({ ...base, type: 'image', src: b.url, w: b.w, h: b.h }), !templates.length && !svgs.length && i === 0));
+    list.append(option('image', t('optImage', `${b.w}×${b.h}`), file, () => startJob({ ...base, type: 'image', src: b.url, w: b.w, h: b.h }), !templates.length && !svgs.length && i === 0 && !b.art));
   });
-  list.append(option('capture', t('optCapture'), t('optCaptureSub'), () => captureVisible(tab), !templates.length && !bigs.length && !svgs.length));
+  list.append(option('capture', t('optCapture'), t('optCaptureSub'), () => captureVisible(tab), !templates.length && !mapImage && !svgs.length));
   if (!templates.length) $('hint').hidden = false;
   if (found.full && !templates.length && !svgs.length) $('reload').classList.add('strong');
 }
