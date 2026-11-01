@@ -93,7 +93,7 @@ Version 2.2 downloaded each of these whole maps in a test browser (Brave without
 - Checked by hand in Brave on 15 October 2026: Fortnite ([fortnite.gg](https://fortnite.gg/)) and World of Warcraft ([Wowhead](https://www.wowhead.com/maps)).
 - Last passed the automatic test: Skyrim ([UESP](https://en.uesp.net/maps/srmap/srmap.shtml)) on 25 October 2026, and ARK: Survival Ascended ([wikily.gg](https://wikily.gg/ark-survival-ascended/maps/the-island)) on 18 October 2026.
 
-**Firefox.** The table above was tested on Chromium. In Firefox, DayZ, Genshin Impact, AION 2, Project Zomboid and Dark and Darker were tested on 15 October 2026.
+**Firefox.** The table above was tested on Chromium. In Firefox, DayZ, Dark and Darker, AION 2 and Escape from Tarkov were tested on 1 November 2026, and Genshin Impact and Project Zomboid on 15 October 2026.
 
 Maps that are drawn in the browser from data (Subnautica, Valheim's world generator) have no images to download: only "Just what's visible" works there.
 
