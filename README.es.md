@@ -27,7 +27,7 @@ Abre una web de mapa y pulsa **Alt+Shift+M** (o el icono). Elige **Mapa entero**
 
 ## Webs probadas
 
-La versión 2.2.0 descargó cada uno de estos mapas enteros en un navegador de pruebas (Brave sin ventana), y el resultado se comprobó a ojo en una miniatura. El *tamaño probado* es el nivel que eligió la prueba, no siempre el máximo que ofrece la web.
+La versión 2.2 descargó cada uno de estos mapas enteros en un navegador de pruebas (Brave sin ventana), y el resultado se comprobó a ojo en una miniatura. El *tamaño probado* es el nivel que eligió la prueba, no siempre el máximo que ofrece la web.
 
 | Juego | Web | Tamaño probado (px) | Última prueba |
 |---|---|---|---|

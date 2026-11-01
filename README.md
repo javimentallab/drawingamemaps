@@ -39,7 +39,7 @@ Then draw: pencil, line, arrow, rectangle, circle, text, eraser, colors and thic
 
 ## Tested sites
 
-Version 2.2.0 downloaded each of these whole maps in a test browser (Brave without a window), and the result was checked by eye on a thumbnail. *Size tested* is the level the test picked, not always the highest the site offers.
+Version 2.2 downloaded each of these whole maps in a test browser (Brave without a window), and the result was checked by eye on a thumbnail. *Size tested* is the level the test picked, not always the highest the site offers.
 
 | Game | Site | Size tested (px) | Last test |
 |---|---|---|---|
