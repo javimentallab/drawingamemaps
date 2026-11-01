@@ -85,6 +85,19 @@ La versión 2.2 descargó cada uno de estos mapas enteros en un navegador de pru
 
 Los mapas que se dibujan en el navegador a partir de datos (Subnautica, el generador de mundos de Valheim) no tienen imágenes que descargar: ahí solo funciona «Solo lo que se ve».
 
+## Desarrollo
+
+```
+src/                 la extensión (Manifest V3, variante Chromium, sin compilación ni dependencias)
+tools/build.js       genera dist/chromium + dist/firefox y sus paquetes .zip para las tiendas
+tools/i18n-messages.py   textos en inglés y español (+ tools/i18n-more.py, los otros 13 idiomas) → src/_locales
+tools/make-icons.py  dibuja el icono
+tools/vigilante/     robot de pruebas semanal: ejecuta la extensión en un navegador sin ventana contra muchas
+                     webs de mapas, descubre juegos nuevos en Map Genie / th.gl / Shackmaps e informa
+```
+
+La versión de Firefox solo cambia en el manifiesto (`background.scripts`, `browser_specific_settings`) y en un pequeño adaptador que hace corresponder `chrome` con `browser`.
+
 ## Privacidad
 
 No recoge ningún dato; todo se guarda en tu navegador. Ver [PRIVACY.md](PRIVACY.md).
