@@ -114,6 +114,10 @@ The Firefox build differs only in the manifest (`background.scripts`, `browser_s
 
 drawingamemaps collects no data. Maps and drawings are stored only in your browser; it only connects to the map sites you choose to download from. See [PRIVACY.md](PRIVACY.md).
 
+## Contributing
+
+See [CONTRIBUTING](CONTRIBUTING.md). To report a security problem privately, see [SECURITY](SECURITY.md).
+
 ## License
 
 [MIT](LICENSE). Built with the help of Claude (Anthropic).

@@ -102,6 +102,10 @@ La versión de Firefox solo cambia en el manifiesto (`background.scripts`, `brow
 
 No recoge ningún dato; todo se guarda en tu navegador. Ver [PRIVACY.md](PRIVACY.md).
 
+## Contribuir
+
+Consulta [CONTRIBUTING](CONTRIBUTING.md), en inglés. Para avisar en privado de un problema de seguridad, consulta [SECURITY](SECURITY.md).
+
 ## Licencia
 
 [MIT](LICENSE). Hecha con ayuda de Claude (Anthropic).
