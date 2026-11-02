@@ -19,9 +19,15 @@ function copySrc(dst) {
 
 function zip(dir, out) {
   fs.rmSync(out, { force: true });
-  // tar de Windows (bsdtar) sabe hacer zip; los ficheros quedan en la raíz del zip, como piden las tiendas.
   // (se listan los ficheros en vez de "." para que no queden rutas "./manifest.json", que AMO rechaza)
-  execFileSync(path.join(process.env.SystemRoot || 'C:\\Windows', 'System32', 'tar.exe'), ['-a', '-c', '-f', out, '-C', dir, ...fs.readdirSync(dir)]);
+  const ficheros = fs.readdirSync(dir);
+  if (process.platform === 'win32') {
+    // tar de Windows (bsdtar) sabe hacer zip; los ficheros quedan en la raíz del zip, como piden las tiendas.
+    execFileSync(path.join(process.env.SystemRoot || 'C:\\Windows', 'System32', 'tar.exe'), ['-a', '-c', '-f', out, '-C', dir, ...ficheros]);
+  } else {
+    // En Linux y macOS, zip, también con los ficheros en la raíz.
+    execFileSync('zip', ['-q', '-r', '-X', out, ...ficheros], { cwd: dir });
+  }
 }
 
 fs.mkdirSync(DIST, { recursive: true });
