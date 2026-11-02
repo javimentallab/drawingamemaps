@@ -2,6 +2,8 @@
 
 # drawingamemaps
 
+*[Versión en español](README.es.md)*
+
 Download the **whole map** from video game map websites and **draw on it** — with zoom and pan, the strokes stay glued to the terrain. Then copy, download or share the result (paste it straight into Discord, TeamSpeak, WhatsApp…).
 
 <p align="center"><img src="store/screenshot-1-draw.png" width="100%" alt="Drawing on a downloaded DayZ map"></p>
@@ -13,8 +15,6 @@ Download the **whole map** from video game map websites and **draw on it** — w
 Works in Chromium browsers (Chrome, Brave, Edge, Opera…) and Firefox-based browsers (Firefox, Zen, LibreWolf…). Interface in English, Spanish, Portuguese, French, German, Italian, Dutch, Polish, Russian, Ukrainian, Chinese, Japanese, Korean, Thai and Hindi.
 
 Tested on [more than 40 games](#tested-sites), with the list updated on 1 November 2026.
-
-*[Versión en español](README.es.md)*
 
 ## How it works
 
@@ -29,7 +29,7 @@ Open a game map site and press **Alt+Shift+M** (or click the extension icon). dr
 
 It also copes with the usual quirks: inverted zoom numbering, `z/y/x` order, flipped rows (TMS), hotlink protection (it sends the map site as `Referer`), filler tiles outside the map, and transparent or plain borders, which it trims.
 
-Then draw: pencil, line, arrow, rectangle, circle, text, eraser, colors and thickness, undo/redo. Everything is saved locally in your browser ("My maps").
+Then draw: pencil, line, arrow, rectangle, circle, text, eraser, colors and thickness, undo/redo. The 📤 button (or **Ctrl+C**) copies what's visible, ready to paste into the chat. Everything is saved locally in your browser ("My maps").
 
 ## Install
 

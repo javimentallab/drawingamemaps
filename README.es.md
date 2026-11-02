@@ -2,6 +2,8 @@
 
 # drawingamemaps
 
+*[English version](README.md)*
+
 Descarga el **mapa entero** de las webs de mapas de videojuegos y **dibuja encima** con zoom y desplazamiento; los trazos se quedan pegados al terreno. Luego copia, descarga o comparte el resultado (pégalo directamente en Discord, TeamSpeak, WhatsApp…).
 
 <p align="center"><img src="store/screenshot-1-draw.png" width="100%" alt="Dibujando sobre un mapa de DayZ descargado"></p>
@@ -14,16 +16,26 @@ Funciona en navegadores Chromium (Chrome, Brave, Edge, Opera…) y en los basado
 
 Probada en [más de 40 juegos](#webs-probadas), con la lista actualizada el 1 de noviembre de 2026.
 
-*[English version](README.md)*
-
 ## Uso
 
-Abre una web de mapa y pulsa **Alt+Shift+M** (o el icono). Elige **Mapa entero** (teselas), **Mapa vectorial (SVG)**, **Imagen completa** o **Solo lo que se ve**; si hace falta, elige el nivel de detalle. Dibuja con lápiz, línea, flecha, rectángulo, círculo, texto y goma. Con el botón 📤 (o **Ctrl+C**) copias lo que se ve y lo pegas en el chat.
+Abre una web de mapa y pulsa **Alt+Shift+M** (o el icono). La extensión mira lo que ha cargado la página y te ofrece la mejor forma de conseguir el mapa entero; si hace falta, elige el nivel de detalle:
+
+| Origen | Ejemplos | Qué hace |
+|---|---|---|
+| **Mapa entero** (teselas `z/x/y`, Deep Zoom, cuadrículas planas…) | Map Genie, IGN, th.gl, visores Leaflet / OpenLayers / canvas propio | Averigua el patrón de las URL, los niveles de zoom y la extensión del mapa, y lo descarga entero al nivel de detalle que elijas |
+| **Mapa vectorial (SVG)** | tarkov.dev | Lo convierte en teselas a la resolución que elijas; hace zoom sin perder nitidez |
+| **Imagen completa** | Dark and Darker, Humanitz | La descarga tal cual |
+| **Solo lo que se ve** | cualquier otra | Una captura de la vista actual |
+
+También se apaña con las rarezas habituales: zoom numerado al revés, orden `z/y/x`, filas invertidas (TMS), protección contra enlaces externos (envía la web del mapa como `Referer`), teselas de relleno fuera del mapa y bordes transparentes o lisos, que recorta.
+
+Después dibuja con lápiz, línea, flecha, rectángulo, círculo, texto y goma, con colores y grosor, deshacer y rehacer. Con el botón 📤 (o **Ctrl+C**) copias lo que se ve y lo pegas en el chat. Todo se guarda en tu navegador («Mis mapas»).
 
 ## Instalar
 
 - **Firefox, Zen, LibreWolf…**: desde [addons.mozilla.org](https://addons.mozilla.org/firefox/addon/drawingamemaps/).
 - **Chrome, Brave, Edge, Opera…**: no está en la Chrome Web Store. Descarga `drawingamemaps-chromium-<versión>.zip` de la [última release](https://github.com/javimentallab/drawingamemaps/releases/latest), descomprímelo, abre `chrome://extensions`, activa el **Modo desarrollador** y pulsa **Cargar descomprimida** sobre la carpeta.
+- **Desde el código**: en Chromium, *Cargar descomprimida* sobre `src/`. En Firefox, `node tools/build.js` y luego `about:debugging#/runtime/this-firefox` → *Cargar complemento temporal* → `dist/firefox/manifest.json`.
 
 ## Webs probadas
 
@@ -100,7 +112,7 @@ La versión de Firefox solo cambia en el manifiesto (`background.scripts`, `brow
 
 ## Privacidad
 
-No recoge ningún dato; todo se guarda en tu navegador. Ver [PRIVACY.md](PRIVACY.md).
+No recoge ningún dato. Los mapas y los dibujos se guardan solo en tu navegador, y solo se conecta a las webs de mapas de las que decidas descargar. Ver [PRIVACY.md](PRIVACY.md).
 
 ## Contribuir
 
