@@ -13,10 +13,9 @@ Security problems go through [SECURITY.md](SECURITY.md), not through issues.
 For anything big, open an issue first so we can agree on the approach.
 
 ```sh
+node --test
 node tools/build.js
 ```
-
-There are no automated tests yet, so say in your pull request how you checked your change.
 
 - **Tests:** anything important that you add comes with a test.
 - **Dependencies:** a new one needs a permissive licence (MIT, BSD, Apache…). Check it before adding it.
